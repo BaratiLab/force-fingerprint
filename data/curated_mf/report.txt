@@ -1,0 +1,36 @@
+DPFunc filtering report (MF)
+============================================================
+step                                   train   valid    test   total
+input                                  33046     419     699   34164
+mapped to UniProt                      32751     410     687   33848
+length 30-599                          23084     289     490   23863
+non-membrane                           15320     203     292   15815
+monomer (strict)                         676       4      14     694
+structure (any)                          676       4      14     694
+re-split                                 555      69      70     694
+has in-vocab GO labels                   552      69      69     690
+after ML-RUS                             497      69      69     635
+
+Drop reasons:
+    15121  not monomer
+     9971  length >= 600
+     8048  membrane protein
+      316  not mapped to current UniProtKB
+       55  ML-RUS undersampled (train)
+       14  length < 30
+        4  no GO term left with >= 10 train proteins
+
+Structure availability (kept proteins):
+structure_source  AlphaFold  PDB+AlphaFold
+split                                     
+train                   236            261
+valid                    32             37
+test                     31             38
+
+GO vocabulary: 106 terms (min train count 10)
+Terms with no valid / test positives: 10 / 13
+
+Train label imbalance:
+  before_vocab_filter  n_samples=555, n_terms=892, label_cardinality=9.845, MeanIR=265.51, MaxIR=420.0, CVIR=0.608, SCUMBLE=0.6208, min_term_count=1, max_term_count=420, median_term_count=2
+  after_vocab_filter   n_samples=552, n_terms=106, label_cardinality=6.772, MeanIR=21.34, MaxIR=42.0, CVIR=0.524, SCUMBLE=0.3553, min_term_count=10, max_term_count=420, median_term_count=20
+  final                n_samples=497, n_terms=106, label_cardinality=7.008, MeanIR=19.99, MaxIR=38.2, CVIR=0.494, SCUMBLE=0.3557, min_term_count=10, max_term_count=382, median_term_count=20

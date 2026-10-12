@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+.uv/
+
+# IDE & Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Caches and output data
+dpfunc_filter_cache/
+filtered_*/
+output/
+output_*/
+test_out/
+test_cache/
+*.tmp
+*.tar.gz
+*.zip
+*.pdb
+*.cif
+
+# Raw manifests and datasets
+mf_manifest_*.tsv
+bp_manifest_*.tsv
+cc_manifest_*.tsv
+*_manifest_from_data_dpfunc.tsv
+*.manifest.tsv

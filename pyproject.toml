@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dpfunc-filter"
+version = "0.1.0"
+description = "Curate and filter DPFunc protein function prediction datasets: Monomers, non-membrane, <600 residues, structure validation (PDB vs AlphaFold), and multi-label class imbalance management."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "Bioinformatics Research" }
+]
+keywords = [
+    "deep-learning",
+    "protein-function-prediction",
+    "gene-ontology",
+    "alphafold",
+    "pdb",
+    "dpfunc",
+    "bioinformatics",
+    "class-imbalance"
+]
+dependencies = [
+    "pandas>=1.3.0",
+    "requests>=2.25.0",
+    "numpy>=1.20.0",
+]
+
+[project.scripts]
+dpfunc-filter = "dpfunc_filter:main"

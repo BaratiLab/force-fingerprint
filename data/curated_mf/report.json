@@ -1,0 +1,168 @@
+{
+  "args": {
+    "manifest": "mf_manifest_from_data_dpfunc.tsv",
+    "data_dir": "None",
+    "ontology": "mf",
+    "outdir": "filtered_mf",
+    "cache_dir": "dpfunc_filter_cache",
+    "download_structures": "True",
+    "structure_source_pref": "pdb",
+    "resplit": "[0.8, 0.1, 0.1]",
+    "max_len": "600",
+    "min_len": "30",
+    "reviewed_only": "False",
+    "no_subcell_text": "False",
+    "monomer_mode": "strict",
+    "allow_unknown_subunit": "False",
+    "pdb_oligomer_check": "True",
+    "max_pdb_per_protein": "5",
+    "check_alphafold": "True",
+    "min_plddt": "None",
+    "require_structure": "any",
+    "local_structure_dir": "[]",
+    "max_fetch_pdb": "3",
+    "min_term_count": "10",
+    "keep_root": "False",
+    "undersample_frac": "0.1",
+    "max_pos_weight": "50.0",
+    "seed": "42",
+    "workers": "8"
+  },
+  "steps": [
+    {
+      "step": "input",
+      "train": 33046,
+      "valid": 419,
+      "test": 699,
+      "total": 34164
+    },
+    {
+      "step": "mapped to UniProt",
+      "train": 32751,
+      "valid": 410,
+      "test": 687,
+      "total": 33848
+    },
+    {
+      "step": "length 30-599",
+      "train": 23084,
+      "valid": 289,
+      "test": 490,
+      "total": 23863
+    },
+    {
+      "step": "non-membrane",
+      "train": 15320,
+      "valid": 203,
+      "test": 292,
+      "total": 15815
+    },
+    {
+      "step": "monomer (strict)",
+      "train": 676,
+      "valid": 4,
+      "test": 14,
+      "total": 694
+    },
+    {
+      "step": "structure (any)",
+      "train": 676,
+      "valid": 4,
+      "test": 14,
+      "total": 694
+    },
+    {
+      "step": "re-split",
+      "train": 555,
+      "valid": 69,
+      "test": 70,
+      "total": 694
+    },
+    {
+      "step": "has in-vocab GO labels",
+      "train": 552,
+      "valid": 69,
+      "test": 69,
+      "total": 690
+    },
+    {
+      "step": "after ML-RUS",
+      "train": 497,
+      "valid": 69,
+      "test": 69,
+      "total": 635
+    }
+  ],
+  "drop_reasons": {
+    "not monomer": 15121,
+    "length >= 600": 9971,
+    "membrane protein": 8048,
+    "not mapped to current UniProtKB": 316,
+    "ML-RUS undersampled (train)": 55,
+    "length < 30": 14,
+    "no GO term left with >= 10 train proteins": 4
+  },
+  "structure_availability_kept": {
+    "train": {
+      "AlphaFold": 236,
+      "PDB+AlphaFold": 261
+    },
+    "valid": {
+      "AlphaFold": 32,
+      "PDB+AlphaFold": 37
+    },
+    "test": {
+      "AlphaFold": 31,
+      "PDB+AlphaFold": 38
+    }
+  },
+  "subunit_class_after_membrane_filter": {
+    "oligomer": 6435,
+    "unknown": 5234,
+    "interacts": 2970,
+    "monomer": 727,
+    "mixed": 449
+  },
+  "go_vocab_size": 106,
+  "imbalance_train": {
+    "before_vocab_filter": {
+      "n_samples": 555,
+      "n_terms": 892,
+      "label_cardinality": 9.845,
+      "MeanIR": 265.51,
+      "MaxIR": 420.0,
+      "CVIR": 0.608,
+      "SCUMBLE": 0.6208,
+      "min_term_count": 1,
+      "max_term_count": 420,
+      "median_term_count": 2
+    },
+    "after_vocab_filter": {
+      "n_samples": 552,
+      "n_terms": 106,
+      "label_cardinality": 6.772,
+      "MeanIR": 21.34,
+      "MaxIR": 42.0,
+      "CVIR": 0.524,
+      "SCUMBLE": 0.3553,
+      "min_term_count": 10,
+      "max_term_count": 420,
+      "median_term_count": 20
+    },
+    "final": {
+      "n_samples": 497,
+      "n_terms": 106,
+      "label_cardinality": 7.008,
+      "MeanIR": 19.99,
+      "MaxIR": 38.2,
+      "CVIR": 0.494,
+      "SCUMBLE": 0.3557,
+      "min_term_count": 10,
+      "max_term_count": 382,
+      "median_term_count": 20
+    }
+  },
+  "ml_rus_removed": 55,
+  "terms_missing_in_valid": 10,
+  "terms_missing_in_test": 13
+}
