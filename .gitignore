@@ -1,0 +1,6 @@
+# generated / local: never commit
+.venv/
+cache/
+runs/
+__pycache__/
+*.pyc

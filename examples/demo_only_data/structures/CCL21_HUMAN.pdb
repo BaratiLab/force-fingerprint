@@ -1,0 +1,114 @@
+HEADER    CYTOKINE                                10-OCT-10   2L4N              
+TITLE     SOLUTION STRUCTURE OF THE CHEMOKINE CCL21                             
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: C-C MOTIF CHEMOKINE 21;                                    
+COMPND   3 CHAIN: A;                                                            
+COMPND   4 FRAGMENT: CCL21 (UNP RESIDUES 24-134);                               
+COMPND   5 SYNONYM: 6CKINE, BETA-CHEMOKINE EXODUS-2, SECONDARY LYMPHOID-TISSUE  
+COMPND   6 CHEMOKINE, SLC, SMALL-INDUCIBLE CYTOKINE A21;                        
+COMPND   7 ENGINEERED: YES                                                      
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   
+SOURCE   3 ORGANISM_COMMON: HUMAN;                                              
+SOURCE   4 ORGANISM_TAXID: 9606;                                                
+SOURCE   5 GENE: CCL21, RP11-195F19.22-001, SCYA21, UNQ784/PRO1600;             
+SOURCE   6 EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 
+SOURCE   7 EXPRESSION_SYSTEM_TAXID: 562;                                        
+SOURCE   8 EXPRESSION_SYSTEM_VECTOR_TYPE: PLASMID;                              
+SOURCE   9 EXPRESSION_SYSTEM_VECTOR: PQE30-8HT-SMT3                             
+KEYWDS    SLC, 6CKINE, EXODUS-2, CCR7, CHEMOKINE, CYTOKINE                      
+EXPDTA    SOLUTION NMR                                                          
+NUMMDL    20                                                                    
+AUTHOR    C.T.VELDKAMP,F.C.PETERSON,M.LOVE,J.L.SANDBERG                         
+REVDAT   5   06-NOV-24 2L4N    1       REMARK                                   
+REVDAT   4   14-JUN-23 2L4N    1       REMARK                                   
+REVDAT   3   05-FEB-20 2L4N    1       REMARK SEQADV                            
+REVDAT   2   16-SEP-15 2L4N    1       JRNL                                     
+REVDAT   1   02-NOV-11 2L4N    0                                                
+JRNL        AUTH   M.LOVE,J.L.SANDBERG,J.J.ZIAREK,K.P.GERARDEN,R.R.RODE,        
+JRNL        AUTH 2 D.R.JENSEN,D.R.MCCASLIN,F.C.PETERSON,C.T.VELDKAMP            
+JRNL        TITL   SOLUTION STRUCTURE OF CCL21 AND IDENTIFICATION OF A PUTATIVE 
+JRNL        TITL 2 CCR7 BINDING SITE.                                           
+JRNL        REF    BIOCHEMISTRY                  V.  51   733 2012              
+JRNL        REFN                   ISSN 0006-2960                               
+JRNL        PMID   22221265                                                     
+JRNL        DOI    10.1021/BI201601K                                            
+REMARK   2                                                                      
+REMARK   2 RESOLUTION. NOT APPLICABLE.                                          
+REMARK   3                                                                      
+REMARK   3 REFINEMENT.                                                          
+REMARK   3   PROGRAM     : CYANA, CYANA                                         
+REMARK   3   AUTHORS     : GUNTERT, MUMENTHALER AND WUTHRICH (CYANA),           
+REMARK   3                 GUNTERT, MUMENTHALER AND WUTHRICH (CYANA)            
+REMARK   3                                                                      
+ATOM      2  CA  SER A   1       8.353  -7.182 -15.373  1.00 34.22           C  
+ATOM     15  CA  ASP A   2      10.578  -5.950 -18.178  1.00 14.44           C  
+ATOM     27  CA  GLY A   3       8.462  -3.208 -19.567  1.00 24.31           C  
+ATOM     34  CA  GLY A   4       6.635  -2.268 -16.429  1.00 55.21           C  
+ATOM     41  CA  ALA A   5       3.875  -3.744 -14.353  1.00 53.40           C  
+ATOM     51  CA  GLN A   6       1.147  -5.275 -16.446  1.00 12.15           C  
+ATOM     68  CA  ASP A   7      -0.186  -7.665 -13.919  1.00 14.23           C  
+ATOM     80  CA  CYS A   8      -2.117  -6.203 -11.083  1.00 73.25           C  
+ATOM     90  CA  CYS A   9      -0.241  -5.931  -7.822  1.00 15.51           C  
+ATOM    100  CA  LEU A  10       3.534  -6.291  -8.292  1.00  3.41           C  
+ATOM    119  CA  LYS A  11       4.381  -7.591  -4.876  1.00 51.12           C  
+ATOM    141  CA  TYR A  12       2.502  -8.538  -1.791  1.00 13.00           C  
+ATOM    162  CA  SER A  13       3.143  -7.562   1.758  1.00 45.53           C  
+ATOM    173  CA  GLN A  14       5.726  -9.980   3.133  1.00 62.24           C  
+ATOM    190  CA  ARG A  15       6.693  -7.366   5.634  1.00 51.14           C  
+ATOM    214  CA  LYS A  16       4.433  -5.149   7.595  1.00 21.12           C  
+ATOM    236  CA  ILE A  17       4.869  -1.612   6.447  1.00 75.54           C  
+ATOM    255  CA  PRO A  18       3.352   1.045   8.764  1.00 34.13           C  
+ATOM    269  CA  ALA A  19       1.783   4.346   7.550  1.00 72.35           C  
+ATOM    279  CA  LYS A  20       4.514   6.012   9.578  1.00 22.14           C  
+ATOM    301  CA  VAL A  21       7.190   5.031   7.111  1.00 54.31           C  
+ATOM    317  CA  VAL A  22       5.123   5.583   4.007  1.00 23.44           C  
+ATOM    333  CA  ARG A  23       3.723   8.850   2.917  1.00 30.44           C  
+ATOM    357  CA  SER A  24       0.984   7.916   0.574  1.00  1.22           C  
+ATOM    368  CA  TYR A  25      -0.448   5.024  -1.328  1.00 74.30           C  
+ATOM    389  CA  ARG A  26      -1.327   4.535  -4.918  1.00  2.43           C  
+ATOM    413  CA  LYS A  27      -4.573   3.127  -6.079  1.00  4.44           C  
+ATOM    435  CA  GLN A  28      -4.913   0.487  -8.689  1.00 41.32           C  
+ATOM    452  CA  GLU A  29      -7.683   0.994 -11.222  1.00 64.12           C  
+ATOM    467  CA  PRO A  30     -10.100  -1.973 -10.487  1.00 23.05           C  
+ATOM    481  CA  SER A  31     -12.215  -1.710 -13.596  1.00 53.30           C  
+ATOM    492  CA  LEU A  32      -9.811  -2.267 -16.485  1.00 50.32           C  
+ATOM    511  CA  GLY A  33      -7.075  -3.943 -14.520  1.00 54.24           C  
+ATOM    518  CA  CYS A  34      -8.404  -6.337 -11.951  1.00 55.40           C  
+ATOM    528  CA  SER A  35     -11.670  -6.563 -10.069  1.00 21.01           C  
+ATOM    539  CA  ILE A  36      -9.885  -6.176  -6.767  1.00 64.41           C  
+ATOM    558  CA  PRO A  37      -8.138  -2.854  -5.989  1.00 53.54           C  
+ATOM    572  CA  ALA A  38      -4.619  -2.754  -4.735  1.00  3.04           C  
+ATOM    582  CA  ILE A  39      -2.765  -0.589  -2.331  1.00 44.31           C  
+ATOM    601  CA  LEU A  40       0.622   0.506  -3.423  1.00 55.22           C  
+ATOM    620  CA  PHE A  41       2.954   1.625  -0.692  1.00 21.41           C  
+ATOM    640  CA  LEU A  42       5.150   4.590  -1.441  1.00 73.40           C  
+ATOM    659  CA  PRO A  43       7.740   4.693   1.339  1.00 25.41           C  
+ATOM    673  CA  ARG A  44       9.746   7.634   2.504  1.00 43.21           C  
+ATOM    697  CA  LYS A  45      12.716   5.674   1.351  1.00 15.42           C  
+ATOM    719  CA  ARG A  46      13.119   5.422  -2.433  1.00 33.15           C  
+ATOM    743  CA  SER A  47      15.322   2.369  -2.587  1.00 10.22           C  
+ATOM    754  CA  GLN A  48      12.401   0.266  -3.765  1.00 52.31           C  
+ATOM    771  CA  ALA A  49       9.440   0.968  -5.995  1.00 72.42           C  
+ATOM    781  CA  GLU A  50       5.769   1.171  -5.107  1.00 73.03           C  
+ATOM    796  CA  LEU A  51       5.045  -1.995  -3.125  1.00 11.12           C  
+ATOM    815  CA  CYS A  52       1.636  -3.447  -3.488  1.00 34.41           C  
+ATOM    825  CA  ALA A  53      -0.080  -4.782  -0.414  1.00  3.43           C  
+ATOM    835  CA  ASP A  54      -3.247  -6.771   0.161  1.00 23.43           C  
+ATOM    847  CA  PRO A  55      -5.830  -4.162   1.186  1.00 65.30           C  
+ATOM    861  CA  LYS A  56      -8.111  -6.674   2.854  1.00 73.15           C  
+ATOM    883  CA  GLU A  57      -5.670  -6.736   5.718  1.00 64.00           C  
+ATOM    898  CA  LEU A  58      -6.813  -4.560   8.542  1.00  2.22           C  
+ATOM    917  CA  TRP A  59      -3.527  -2.731   8.857  1.00 64.30           C  
+ATOM    941  CA  VAL A  60      -3.549  -1.785   5.135  1.00 54.40           C  
+ATOM    957  CA  GLN A  61      -7.137  -0.668   5.506  1.00 23.04           C  
+ATOM    974  CA  GLN A  62      -6.093   1.451   8.504  1.00 72.41           C  
+ATOM    991  CA  LEU A  63      -3.163   2.974   6.584  1.00 65.43           C  
+ATOM   1010  CA  MET A  64      -5.623   4.170   3.908  1.00 52.23           C  
+ATOM   1027  CA  GLN A  65      -7.126   6.597   6.396  1.00 10.34           C  
+ATOM   1044  CA  HIS A  66      -3.796   8.089   7.492  1.00 64.22           C  
+ATOM   1062  CA  LEU A  67      -2.302   8.164   4.044  1.00 31.44           C  
+ATOM   1081  CA  ASP A  68      -5.249   9.727   2.346  1.00 32.40           C  
+ATOM   1093  CA  LYS A  69      -4.763  12.592   4.758  1.00 51.22           C  
+ATOM   1115  CA  THR A  70      -2.351  15.017   3.260  1.00 13.10           C  
+END

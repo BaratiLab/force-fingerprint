@@ -1,0 +1,73 @@
+# MultiPeptide: sequence + structure (+ any extra feature columns) contrastive model for arbitrary target columns
+# Everything here can be changed per run with  --set section.key=value  (e.g. --set structure.min_plddt=80 train.epochs=30)
+mode: null                 # per_target = one independent model per target column (RECOMMENDED) | joint = ONE model with a head per column | null = ask (or per_target when not interactive)
+
+data:
+  csv: null                # your table: one row per protein; see README
+  root: .                  # fallback folder for relative structure_file / feature-file paths (the CSV's own folder is tried first)
+  cache_dir: cache
+  columns: {}              # rename reserved columns, e.g. {id: name, sequence: seq}
+  targets: null            # null = every non-reserved column; or ["activity", "class:multiclass", "tags:multilabel"]
+  delimiter: ';'           # separates labels inside a multilabel cell
+  max_classes: 20          # more distinct text values than this -> treated as free text (rejected unless typed)
+  min_label_count: 5       # multilabel: keep labels seen >= this often in train
+  domain_min_count: 2      # InterPro column: keep domain ids seen >= this often in train
+  max_len: 1000            # residues (ESM-2 limit 1022)
+  fractions: [0.8, 0.1, 0.1]   # used when the CSV has no `split` column
+
+structure:
+  use: true                      # false = pure sequence model: no structure is looked up or used (--structure off)
+  generate: false                # true = fold proteins that have no structure with the ESMFold API (<=400 aa; sends the sequence to api.esmatlas.com) (--structure generate)
+  # sources are tried in this fixed order, the first that covers your sequence wins: structure_file column -> pdb_id column ->
+  # RCSB sequence search -> AlphaFold DB (uniprot_id column) -> ESMFold (only with generate)
+  min_plddt: 70.0                # AlphaFold/ESMFold models whose mean pLDDT is below this are ignored (that protein then uses the sequence model only); 0 = no filter
+  min_coverage: 0.8              # fraction of your sequence a structure must explain
+
+seq_encoder:                 # frozen ESM-2 residue embeddings -> small transformer
+  plm_model: facebook/esm2_t12_35M_UR50D
+  plm_dim: 480
+  dim: 256
+  layers: 2
+  heads: 8
+
+struct_encoder:
+  dim: 128
+  heads: 4
+  layers: 4
+  k_neighbors: 24
+  cutoff: 10.0
+  rbf: 16
+  max_dist: 20.0
+
+features: []               # extra INPUT modalities from other columns/files of your table (any number); usually given on the command line:
+                           #   --features chem=logp,charge,mw        a tabular group: numeric/text columns -> one vector per protein
+                           #   --feature-files md=md_file            per-protein .npz arrays indexed on the structure's residues (see multipeptide/features.py)
+                           # in YAML: - {name: chem, columns: [logp, charge]}   - {name: md, file_column: md_file}
+
+model:
+  feature_dim: 64             # readout size of each feature group
+  proj_dim: 128
+  dropout: 0.1                # inside the sequence and structure encoders
+  domain_dim: 64              # size of the InterPro-domain embedding that guides the structure readout
+  head_dropout: 0.2           # in the projection, feature and prediction heads
+  modality_dropout: 0.15      # randomly hides a modality so heads work when one is missing
+
+loss:                         # L = L_task + lambda_align * L_align
+  lambda_align: 1.0           # 0 = no contrastive term
+  lambda_expert: 0.5          # weight of the per-modality auxiliary (expert) losses
+  control_lr: 1.0e-2          # learning rate of the contrastive temperature and the modality gates (they need a larger step than the encoders to move)
+
+train:
+  teacher_epochs: 30         # with structure: max epochs for the frozen-structure-teacher phase (early stopping on its own validation score)
+  teacher_dropout: 0.5       # with structure: chance the teacher is hidden from the prediction head, so the structure-free path that is deployed is trained too
+  epochs: 100
+  batch_size: 32
+  lr: 3.0e-4
+  weight_decay: 1.0e-2
+  warmup_epochs: 3
+  patience: 20
+  seed: 0
+  coord_noise: 0.3
+  view_dropout: 0.1          # random residue dropout per branch = augmented 'views' for the contrastive loss
+  n_boot: 200
+  out_dir: runs/default

@@ -1,0 +1,194 @@
+HEADER    CYTOKINE                                29-MAR-93   1HIB              
+TITLE     THE STRUCTURE OF AN INTERLEUKIN-1 BETA MUTANT WITH REDUCED BIOACTIVITY
+TITLE    2 SHOWS MULTIPLE SUBTLE CHANGES IN CONFORMATION THAT AFFECT PROTEIN-   
+TITLE    3 PROTEIN RECOGNITION                                                  
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: INTERLEUKIN-1 BETA;                                        
+COMPND   3 CHAIN: A;                                                            
+COMPND   4 ENGINEERED: YES                                                      
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   
+SOURCE   3 ORGANISM_COMMON: HUMAN;                                              
+SOURCE   4 ORGANISM_TAXID: 9606                                                 
+KEYWDS    CYTOKINE                                                              
+EXPDTA    X-RAY DIFFRACTION                                                     
+AUTHOR    N.P.CAMACHO,D.R.SMITH,A.GOLDMAN,B.SCHNEIDER,D.GREEN,P.R.YOUNG,        
+AUTHOR   2 H.M.BERMAN                                                           
+REVDAT   9   07-FEB-24 1HIB    1       SEQADV                                   
+REVDAT   8   14-AUG-19 1HIB    1       REMARK                                   
+REVDAT   7   17-JUL-19 1HIB    1       REMARK                                   
+REVDAT   6   29-NOV-17 1HIB    1       HELIX                                    
+REVDAT   5   16-NOV-11 1HIB    1       VERSN  HETATM                            
+REVDAT   4   24-FEB-09 1HIB    1       VERSN                                    
+REVDAT   3   01-APR-03 1HIB    1       JRNL                                     
+REVDAT   2   15-JAN-95 1HIB    1       COMPND                                   
+REVDAT   1   31-JAN-94 1HIB    0                                                
+JRNL        AUTH   N.P.CAMACHO,D.R.SMITH,A.GOLDMAN,B.SCHNEIDER,D.GREEN,         
+JRNL        AUTH 2 P.R.YOUNG,H.M.BERMAN                                         
+JRNL        TITL   STRUCTURE OF AN INTERLEUKIN-1 BETA MUTANT WITH REDUCED       
+JRNL        TITL 2 BIOACTIVITY SHOWS MULTIPLE SUBTLE CHANGES IN CONFORMATION    
+JRNL        TITL 3 THAT AFFECT PROTEIN-PROTEIN RECOGNITION.                     
+JRNL        REF    BIOCHEMISTRY                  V.  32  8749 1993              
+JRNL        REFN                   ISSN 0006-2960                               
+JRNL        PMID   8364024                                                      
+JRNL        DOI    10.1021/BI00085A005                                          
+REMARK   2                                                                      
+REMARK   2 RESOLUTION.    2.40 ANGSTROMS.                                       
+REMARK   3                                                                      
+REMARK   3 REFINEMENT.                                                          
+REMARK   3   PROGRAM     : PROLSQ                                               
+REMARK   3   AUTHORS     : KONNERT,HENDRICKSON                                  
+REMARK   3                                                                      
+REMARK   3  DATA USED IN REFINEMENT.                                            
+REMARK   3   RESOLUTION RANGE HIGH (ANGSTROMS) : 2.40                           
+ATOM      2  CA  VAL A   3      11.812  -6.259  60.023  1.00 38.72           C  
+ATOM      9  CA  ARG A   4      14.977  -4.408  58.964  1.00 34.70           C  
+ATOM     20  CA  SER A   5      17.780  -4.246  61.493  1.00 22.32           C  
+ATOM     26  CA  LEU A   6      21.250  -2.764  61.704  1.00 17.33           C  
+ATOM     34  CA  ASN A   7      24.189  -3.147  64.127  1.00 14.40           C  
+ATOM     42  CA  CYS A   8      25.980  -0.139  65.670  1.00  8.88           C  
+ATOM     48  CA  GLY A   9      27.526   1.134  68.895  1.00  4.13           C  
+ATOM     52  CA  LEU A  10      26.322   4.396  70.437  1.00  4.56           C  
+ATOM     60  CA  ARG A  11      28.449   7.241  71.730  1.00  8.01           C  
+ATOM     71  CA  ASP A  12      27.221  10.376  73.495  1.00 11.10           C  
+ATOM     79  CA  SER A  13      28.133  13.896  72.309  1.00 19.16           C  
+ATOM     85  CA  GLN A  14      30.930  14.049  74.951  1.00 19.30           C  
+ATOM     94  CA  GLN A  15      32.623  10.966  73.359  1.00 14.04           C  
+ATOM    103  CA  LYS A  16      31.538   8.466  76.043  1.00 11.18           C  
+ATOM    112  CA  SER A  17      30.836   5.040  74.489  1.00  9.45           C  
+ATOM    118  CA  LEU A  18      28.139   2.794  75.860  1.00  6.40           C  
+ATOM    126  CA  VAL A  19      29.553  -0.332  77.473  1.00  9.12           C  
+ATOM    133  CA  MET A  20      28.298  -3.218  79.626  1.00 13.20           C  
+ATOM    141  CA  SER A  21      28.309  -2.830  83.406  1.00 22.64           C  
+ATOM    147  CA  GLY A  22      27.118  -6.208  84.721  1.00 22.21           C  
+ATOM    151  CA  PRO A  23      24.653  -8.472  82.911  1.00 18.96           C  
+ATOM    158  CA  TYR A  24      21.713  -6.065  83.348  1.00 15.84           C  
+ATOM    170  CA  GLU A  25      23.106  -2.583  83.108  1.00 12.23           C  
+ATOM    179  CA  LEU A  26      24.982  -0.226  80.826  1.00 10.09           C  
+ATOM    187  CA  LYS A  27      27.566   2.489  81.656  1.00  8.03           C  
+ATOM    196  CA  ALA A  28      29.333   5.248  79.677  1.00 10.49           C  
+ATOM    201  CA  LEU A  29      33.012   6.049  79.415  1.00 13.28           C  
+ATOM    209  CA  HIS A  30      35.523   7.571  76.998  1.00 19.20           C  
+ATOM    219  CA  LEU A  31      37.299   4.895  75.064  1.00 28.28           C  
+ATOM    227  CA  GLN A  32      39.863   5.225  72.211  1.00 53.98           C  
+ATOM    236  CA  GLY A  33      42.825   6.315  74.355  1.00 70.27           C  
+ATOM    240  CA  GLN A  34      41.872   5.505  77.928  1.00 81.35           C  
+ATOM    249  CA  ASP A  35      39.992   2.191  77.805  1.00 79.27           C  
+ATOM    257  CA  MET A  36      40.200   0.463  74.350  1.00 70.99           C  
+ATOM    265  CA  GLU A  37      37.517   0.245  71.614  1.00 61.14           C  
+ATOM    274  CA  GLN A  38      34.867  -2.237  72.887  1.00 42.14           C  
+ATOM    283  CA  GLN A  39      31.462  -0.704  72.944  1.00 22.83           C  
+ATOM    292  CA  VAL A  40      28.267  -2.805  73.282  1.00 13.97           C  
+ATOM    299  CA  VAL A  41      26.914  -3.726  69.795  1.00  7.58           C  
+ATOM    306  CA  PHE A  42      23.198  -2.818  69.561  1.00  7.41           C  
+ATOM    317  CA  SER A  43      20.806  -4.274  66.998  1.00 12.78           C  
+ATOM    323  CA  MET A  44      18.516  -1.354  66.053  1.00 10.39           C  
+ATOM    331  CA  SER A  45      15.271  -2.457  64.409  1.00 12.66           C  
+ATOM    337  CA  PHE A  46      12.872  -0.239  62.456  1.00 18.15           C  
+ATOM    348  CA  VAL A  47       9.534  -0.782  64.179  1.00 27.80           C  
+ATOM    355  CA  GLN A  48       6.044   0.715  63.863  1.00 42.67           C  
+ATOM    364  CA  GLY A  49       4.769   4.014  65.174  1.00 52.00           C  
+ATOM    368  CA  GLU A  50       4.583   7.620  64.137  1.00 65.09           C  
+ATOM    377  CA  GLU A  51       7.305   8.130  61.559  1.00 69.72           C  
+ATOM    386  CA  SER A  52       7.270  11.901  61.976  1.00 70.73           C  
+ATOM    392  CA  ASN A  53       9.502  14.374  60.143  1.00 73.17           C  
+ATOM    400  CA  ASP A  54      12.849  13.458  61.733  1.00 55.74           C  
+ATOM    408  CA  LYS A  55      11.394  10.731  63.938  1.00 37.69           C  
+ATOM    417  CA  ILE A  56      11.702   7.008  63.366  1.00 25.96           C  
+ATOM    425  CA  PRO A  57      10.434   4.440  65.904  1.00 18.81           C  
+ATOM    432  CA  VAL A  58      13.192   1.906  66.678  1.00  8.79           C  
+ATOM    439  CA  ALA A  59      13.884  -0.837  69.144  1.00  6.69           C  
+ATOM    444  CA  LEU A  60      17.348  -1.235  70.747  1.00  5.01           C  
+ATOM    452  CA  GLY A  61      18.563  -4.780  71.314  1.00  8.81           C  
+ATOM    456  CA  LEU A  62      21.864  -6.132  72.691  1.00 12.91           C  
+ATOM    464  CA  LYS A  63      23.296  -8.051  69.787  1.00 22.80           C  
+ATOM    473  CA  GLU A  64      23.253 -11.750  70.695  1.00 30.96           C  
+ATOM    482  CA  LYS A  65      22.032 -11.430  74.309  1.00 20.27           C  
+ATOM    491  CA  ASN A  66      18.277 -11.647  73.590  1.00 11.03           C  
+ATOM    499  CA  LEU A  67      18.078  -8.499  75.772  1.00 10.68           C  
+ATOM    507  CA  TYR A  68      16.148  -5.305  74.811  1.00  9.19           C  
+ATOM    519  CA  LEU A  69      16.151  -1.856  76.401  1.00  6.77           C  
+ATOM    527  CA  SER A  70      12.781  -1.126  78.015  1.00  8.13           C  
+ATOM    533  CA  CYS A  71      11.078   1.681  79.857  1.00  9.22           C  
+ATOM    539  CA  VAL A  72       9.069   0.780  82.929  1.00 13.11           C  
+ATOM    546  CA  LEU A  73       7.935   2.632  86.043  1.00 20.94           C  
+ATOM    554  CA  LYS A  74       9.911   1.705  89.171  1.00 34.27           C  
+ATOM    563  CA  ASP A  75       9.725   3.696  92.363  1.00 45.91           C  
+ATOM    571  CA  ASP A  76       7.380   5.939  90.416  1.00 39.70           C  
+ATOM    579  CA  LYS A  77       9.993   7.190  87.926  1.00 27.73           C  
+ATOM    588  CA  PRO A  78      10.346   6.104  84.254  1.00 17.48           C  
+ATOM    595  CA  THR A  79      13.291   3.649  84.299  1.00 15.86           C  
+ATOM    602  CA  LEU A  80      15.584   1.921  81.847  1.00  9.89           C  
+ATOM    610  CA  GLN A  81      15.874  -1.860  82.385  1.00  9.39           C  
+ATOM    619  CA  LEU A  82      17.185  -4.587  80.010  1.00  9.98           C  
+ATOM    627  CA  GLU A  83      14.520  -7.202  79.615  1.00  9.57           C  
+ATOM    636  CA  SER A  84      14.674 -10.767  78.407  1.00  7.76           C  
+ATOM    642  CA  VAL A  85      12.866 -11.725  75.217  1.00 12.87           C  
+ATOM    649  CA  ASP A  86      12.420 -14.969  73.291  1.00 23.13           C  
+ATOM    657  CA  PRO A  87      14.730 -15.167  70.273  1.00 26.22           C  
+ATOM    664  CA  LYS A  88      11.980 -16.944  68.354  1.00 37.07           C  
+ATOM    673  CA  ASN A  89       9.623 -13.978  68.694  1.00 37.71           C  
+ATOM    681  CA  TYR A  90      12.084 -11.081  68.502  1.00 34.10           C  
+ATOM    693  CA  PRO A  91      12.940  -8.669  67.071  1.00 34.92           C  
+ATOM    700  CA  LYS A  92      10.430  -9.524  64.436  1.00 48.82           C  
+ATOM    709  CA  LYS A  93       7.145  -7.786  65.043  1.00 50.28           C  
+ATOM    718  CA  LYS A  94       6.044  -4.279  65.458  1.00 45.32           C  
+ATOM    727  CA  MET A  95       6.578  -4.399  69.251  1.00 29.82           C  
+ATOM    735  CA  GLU A  96       5.386  -3.368  72.657  1.00 23.63           C  
+ATOM    744  CA  LYS A  97       5.588   0.213  73.728  1.00 22.05           C  
+ATOM    753  CA  ARG A  98       8.014  -0.216  76.598  1.00 11.07           C  
+ATOM    764  CA  PHE A  99      10.611  -1.165  73.995  1.00  5.46           C  
+ATOM    775  CA  VAL A 100       9.998   1.647  71.429  1.00  5.91           C  
+ATOM    782  CA  PHE A 101      12.181   4.722  71.230  1.00  6.98           C  
+ATOM    793  CA  ASN A 102      11.608   7.587  68.825  1.00 11.90           C  
+ATOM    801  CA  LYS A 103      14.984   8.172  67.163  1.00 13.31           C  
+ATOM    810  CA  ILE A 104      15.070  11.962  66.642  1.00 19.28           C  
+ATOM    818  CA  GLU A 105      17.649  13.264  64.142  1.00 36.68           C  
+ATOM    827  CA  ILE A 106      19.185  16.686  64.496  1.00 50.66           C  
+ATOM    835  CA  ASN A 108      23.640  15.899  63.313  1.00 47.31           C  
+ATOM    843  CA  LYS A 109      23.136  13.891  66.509  1.00 32.14           C  
+ATOM    852  CA  LEU A 110      20.415  11.570  67.783  1.00 16.51           C  
+ATOM    860  CA  GLU A 111      18.190  11.527  70.810  1.00 10.36           C  
+ATOM    869  CA  PHE A 112      16.172   8.510  71.854  1.00  3.99           C  
+ATOM    880  CA  GLU A 113      12.876   9.308  73.434  1.00  5.46           C  
+ATOM    889  CA  SER A 114      10.808   6.746  75.279  1.00  6.23           C  
+ATOM    895  CA  ALA A 115       7.582   6.272  73.211  1.00  5.05           C  
+ATOM    900  CA  GLN A 116       6.100   4.827  76.386  1.00 11.30           C  
+ATOM    909  CA  PHE A 117       7.052   7.970  78.386  1.00 13.09           C  
+ATOM    920  CA  PRO A 118       7.060  11.085  76.189  1.00 10.94           C  
+ATOM    927  CA  ASN A 119       9.839  13.439  77.260  1.00 14.87           C  
+ATOM    935  CA  TRP A 120      12.079  10.749  78.835  1.00 12.96           C  
+ATOM    949  CA  TYR A 121      15.427  10.168  77.180  1.00 11.39           C  
+ATOM    961  CA  ILE A 122      18.308   7.682  77.184  1.00  9.20           C  
+ATOM    969  CA  SER A 123      20.900   9.775  79.101  1.00 10.93           C  
+ATOM    975  CA  THR A 124      24.450   9.604  80.510  1.00  6.79           C  
+ATOM    982  CA  SER A 125      26.200  11.613  83.211  1.00 10.27           C  
+ATOM    988  CA  GLN A 126      29.103  14.008  82.735  1.00 15.45           C  
+ATOM    997  CA  ALA A 127      31.197  11.712  84.970  1.00 10.24           C  
+ATOM   1002  CA  GLU A 128      32.860   8.602  83.608  1.00  7.25           C  
+ATOM   1011  CA  ASN A 129      31.842   5.027  84.372  1.00  9.92           C  
+ATOM   1019  CA  MET A 130      28.280   5.898  85.414  1.00 10.11           C  
+ATOM   1027  CA  PRO A 131      25.139   3.868  84.466  1.00  7.52           C  
+ATOM   1034  CA  VAL A 132      23.080   4.965  81.396  1.00  5.11           C  
+ATOM   1041  CA  PHE A 133      19.521   5.893  82.417  1.00  6.89           C  
+ATOM   1052  CA  LEU A 134      16.220   7.478  81.469  1.00  9.46           C  
+ATOM   1060  CA  GLY A 135      16.336  11.188  82.217  1.00 16.63           C  
+ATOM   1064  CA  GLY A 136      13.776  13.920  81.854  1.00 39.94           C  
+ATOM   1068  CA  THR A 137      15.580  17.261  81.502  1.00 56.11           C  
+ATOM   1075  CA  LYS A 138      17.382  17.565  78.096  1.00 59.43           C  
+ATOM   1084  CA  GLY A 139      19.156  20.578  79.585  1.00 58.63           C  
+ATOM   1088  CA  GLY A 140      21.313  20.448  82.735  1.00 51.35           C  
+ATOM   1092  CA  GLN A 141      24.476  18.344  83.037  1.00 41.24           C  
+ATOM   1101  CA  ASP A 142      23.220  14.976  81.675  1.00 30.38           C  
+ATOM   1109  CA  ILE A 143      23.758  14.090  78.018  1.00 15.15           C  
+ATOM   1117  CA  THR A 144      20.880  13.173  75.700  1.00 13.18           C  
+ATOM   1124  CA  ASP A 145      22.656  13.299  72.271  1.00 13.43           C  
+ATOM   1132  CA  PHE A 146      24.514  10.476  70.531  1.00  8.73           C  
+ATOM   1143  CA  THR A 147      26.080   9.164  67.389  1.00  6.11           C  
+ATOM   1150  CA  MET A 148      25.830   5.746  65.804  1.00  9.09           C  
+ATOM   1158  CA  GLN A 149      29.166   4.000  65.629  1.00 10.69           C  
+ATOM   1167  CA  PHE A 150      30.416   1.407  63.153  1.00 14.99           C  
+ATOM   1178  CA  VAL A 151      31.669  -1.792  64.714  1.00 31.90           C  
+ATOM   1185  CA  SER A 152      31.777  -3.995  61.646  1.00 48.89           C  
+ATOM   1191  CA  SER A 153      33.333  -7.325  60.593  1.00 65.72           C  
+END

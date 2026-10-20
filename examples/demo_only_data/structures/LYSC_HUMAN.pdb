@@ -1,0 +1,174 @@
+HEADER    HYDROLASE(O-GLYCOSYL)                   01-JUN-93   133L              
+TITLE     ROLE OF ARG 115 IN THE CATALYTIC ACTION OF HUMAN LYSOZYME. X-RAY      
+TITLE    2 STRUCTURE OF HIS 115 AND GLU 115 MUTANTS                             
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: HUMAN LYSOZYME;                                            
+COMPND   3 CHAIN: A;                                                            
+COMPND   4 EC: 3.2.1.17;                                                        
+COMPND   5 ENGINEERED: YES                                                      
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   
+SOURCE   3 ORGANISM_COMMON: HUMAN;                                              
+SOURCE   4 ORGANISM_TAXID: 9606;                                                
+SOURCE   5 EXPRESSION_SYSTEM_PLASMID: M13                                       
+KEYWDS    HYDROLASE(O-GLYCOSYL)                                                 
+EXPDTA    X-RAY DIFFRACTION                                                     
+AUTHOR    K.HARATA,M.MURAKI,Y.JIGAMI                                            
+REVDAT   4   30-OCT-24 133L    1       SEQADV                                   
+REVDAT   3   29-NOV-17 133L    1       HELIX                                    
+REVDAT   2   24-FEB-09 133L    1       VERSN                                    
+REVDAT   1   31-OCT-93 133L    0                                                
+JRNL        AUTH   K.HARATA,M.MURAKI,Y.JIGAMI                                   
+JRNL        TITL   ROLE OF ARG115 IN THE CATALYTIC ACTION OF HUMAN LYSOZYME.    
+JRNL        TITL 2 X-RAY STRUCTURE OF HIS115 AND GLU115 MUTANTS.                
+JRNL        REF    J.MOL.BIOL.                   V. 233   524 1993              
+JRNL        REFN                   ISSN 0022-2836                               
+JRNL        PMID   8105095                                                      
+JRNL        DOI    10.1006/JMBI.1993.1529                                       
+REMARK   1                                                                      
+REMARK   1 REFERENCE 1                                                          
+REMARK   1  AUTH   M.MURAKI,M.MORIKAWA,Y.JIGAMI,H.TANAKA                        
+REMARK   1  TITL   A STRUCTURAL REQUIREMENT IN THE SUBSITE F OF LYSOZYME. THE   
+REMARK   1  TITL 2 ROLE OF ARGININE 115 IN HUMAN LYSOZYME REVEALED BY           
+REMARK   1  TITL 3 SITE-DIRECTED MUTAGENESIS                                    
+REMARK   1  REF    EUR.J.BIOCHEM.                V. 179   573 1989              
+REMARK   1  REFN                   ISSN 0014-2956                               
+REMARK   2                                                                      
+REMARK   2 RESOLUTION.    1.77 ANGSTROMS.                                       
+REMARK   3                                                                      
+REMARK   3 REFINEMENT.                                                          
+REMARK   3   PROGRAM     : X-PLOR                                               
+REMARK   3   AUTHORS     : BRUNGER                                              
+REMARK   3                                                                      
+REMARK   3  DATA USED IN REFINEMENT.                                            
+ATOM      2  CA  LYS A   1       1.782  20.433  21.160  1.00  4.28           C  
+ATOM     11  CA  VAL A   2       4.609  19.736  18.659  1.00 12.76           C  
+ATOM     18  CA  PHE A   3       7.321  22.340  18.977  1.00  5.91           C  
+ATOM     29  CA  GLU A   4       9.297  23.539  16.051  1.00 12.97           C  
+ATOM     38  CA  ARG A   5      13.067  23.135  16.552  1.00 11.27           C  
+ATOM     49  CA  CYS A   6      14.237  26.706  17.228  1.00  8.12           C  
+ATOM     55  CA  GLU A   7      11.056  27.495  19.169  1.00  4.60           C  
+ATOM     64  CA  LEU A   8      11.959  24.713  21.578  1.00  3.82           C  
+ATOM     72  CA  ALA A   9      15.677  25.703  21.773  1.00  7.27           C  
+ATOM     77  CA  ARG A  10      14.774  29.286  22.856  1.00 12.05           C  
+ATOM     88  CA  THR A  11      12.227  27.929  25.354  1.00 11.20           C  
+ATOM     95  CA  LEU A  12      14.809  25.587  26.971  1.00  5.49           C  
+ATOM    103  CA  LYS A  13      17.430  28.424  27.080  1.00  7.55           C  
+ATOM    112  CA  ARG A  14      14.877  30.613  28.873  1.00  6.30           C  
+ATOM    123  CA  LEU A  15      14.078  27.837  31.371  1.00 11.59           C  
+ATOM    131  CA  GLY A  16      17.767  27.507  32.322  1.00  9.28           C  
+ATOM    135  CA  MET A  17      18.726  24.297  30.572  1.00  9.24           C  
+ATOM    143  CA  ASP A  18      21.833  25.465  28.760  1.00 11.95           C  
+ATOM    151  CA  GLY A  19      24.803  24.028  30.579  1.00  4.83           C  
+ATOM    155  CA  TYR A  20      22.638  22.664  33.395  1.00 12.33           C  
+ATOM    167  CA  ARG A  21      24.769  20.090  35.303  1.00 15.71           C  
+ATOM    178  CA  GLY A  22      27.350  20.469  32.438  1.00  7.18           C  
+ATOM    182  CA  ILE A  23      24.809  19.565  29.704  1.00  7.51           C  
+ATOM    190  CA  SER A  24      24.711  21.753  26.617  1.00  8.20           C  
+ATOM    196  CA  LEU A  25      21.388  22.878  24.980  1.00  6.32           C  
+ATOM    204  CA  ALA A  26      22.250  20.818  21.843  1.00  6.62           C  
+ATOM    209  CA  ASN A  27      22.336  17.620  24.006  1.00  6.30           C  
+ATOM    217  CA  TRP A  28      18.903  18.415  25.497  1.00  5.82           C  
+ATOM    231  CA  MET A  29      17.613  19.088  21.975  1.00  2.00           C  
+ATOM    239  CA  CYS A  30      18.995  15.774  20.666  1.00 11.37           C  
+ATOM    245  CA  LEU A  31      17.287  14.013  23.575  1.00  3.60           C  
+ATOM    253  CA  ALA A  32      13.769  15.578  23.058  1.00  7.73           C  
+ATOM    258  CA  LYS A  33      14.158  14.985  19.335  1.00  9.93           C  
+ATOM    267  CA  TRP A  34      14.791  11.280  19.663  1.00  7.92           C  
+ATOM    281  CA  GLU A  35      12.496  10.803  22.664  1.00  3.58           C  
+ATOM    290  CA  SER A  36       9.395  12.350  21.349  1.00  5.18           C  
+ATOM    296  CA  GLY A  37      10.040  14.264  18.106  1.00 12.63           C  
+ATOM    300  CA  TYR A  38       9.417  17.333  20.292  1.00  9.11           C  
+ATOM    312  CA  ASN A  39       5.854  16.300  21.091  1.00 11.15           C  
+ATOM    320  CA  THR A  40       4.517  17.082  24.659  1.00 10.39           C  
+ATOM    327  CA  ARG A  41       1.616  14.637  24.251  1.00 19.42           C  
+ATOM    338  CA  ALA A  42       3.878  11.586  23.635  1.00 15.90           C  
+ATOM    343  CA  THR A  43       3.289   8.572  25.884  1.00 20.39           C  
+ATOM    350  CA  ASN A  44       4.826   5.130  25.600  1.00 14.32           C  
+ATOM    358  CA  TYR A  45       3.541   2.274  27.816  1.00  9.31           C  
+ATOM    370  CA  ASN A  46       6.139  -0.410  28.528  1.00 10.41           C  
+ATOM    378  CA  ALA A  47       4.289  -3.662  28.926  1.00 20.41           C  
+ATOM    383  CA  GLY A  48       7.190  -5.686  30.291  1.00 11.42           C  
+ATOM    387  CA  ASP A  49       7.379  -3.620  33.478  1.00 16.22           C  
+ATOM    395  CA  ARG A  50       3.980  -1.767  33.650  1.00 17.85           C  
+ATOM    406  CA  SER A  51       5.385   1.730  33.498  1.00 13.69           C  
+ATOM    412  CA  THR A  52       4.694   4.567  30.993  1.00  2.00           C  
+ATOM    419  CA  ASP A  53       6.990   7.306  29.641  1.00  7.30           C  
+ATOM    427  CA  TYR A  54       5.437  10.754  29.499  1.00  5.93           C  
+ATOM    439  CA  GLY A  55       5.888  13.921  27.481  1.00 11.05           C  
+ATOM    443  CA  ILE A  56       8.555  15.640  25.503  1.00  7.30           C  
+ATOM    451  CA  PHE A  57      11.456  13.989  27.481  1.00  7.26           C  
+ATOM    462  CA  GLN A  58       9.703  10.614  27.948  1.00 11.68           C  
+ATOM    471  CA  ILE A  59      10.080  10.620  31.722  1.00  7.17           C  
+ATOM    479  CA  ASN A  60       9.223   7.324  33.349  1.00 12.14           C  
+ATOM    487  CA  SER A  61       6.419   6.682  35.929  1.00  4.21           C  
+ATOM    493  CA  ARG A  62       8.389   4.182  38.086  1.00 12.92           C  
+ATOM    504  CA  TYR A  63      10.931   6.719  39.252  1.00 10.42           C  
+ATOM    516  CA  TRP A  64       9.960  10.265  38.494  1.00  4.74           C  
+ATOM    530  CA  CYS A  65       6.316  11.023  38.169  1.00 11.07           C  
+ATOM    536  CA  ASN A  66       3.232   9.403  39.657  1.00  5.85           C  
+ATOM    544  CA  ASP A  67       0.377   8.028  37.589  1.00 13.49           C  
+ATOM    552  CA  GLY A  68      -1.199   5.716  40.279  1.00  9.89           C  
+ATOM    556  CA  LYS A  69      -0.868   2.525  38.119  1.00 10.20           C  
+ATOM    565  CA  THR A  70       2.935   1.742  38.119  1.00 12.59           C  
+ATOM    572  CA  PRO A  71       4.152  -0.813  40.730  1.00 21.18           C  
+ATOM    579  CA  GLY A  72       7.110   0.379  42.920  1.00 22.90           C  
+ATOM    583  CA  ALA A  73       6.733   4.151  41.953  1.00 16.35           C  
+ATOM    588  CA  VAL A  74       9.058   6.468  43.848  1.00 16.69           C  
+ATOM    595  CA  ASN A  75       7.778   9.752  42.287  1.00  7.90           C  
+ATOM    603  CA  ALA A  76      11.108  11.629  42.811  1.00 16.62           C  
+ATOM    608  CA  CYS A  77       9.948  14.728  40.909  1.00  6.61           C  
+ATOM    614  CA  HIS A  78       6.865  14.790  43.175  1.00 14.10           C  
+ATOM    624  CA  LEU A  79       4.700  15.438  40.137  1.00 14.81           C  
+ATOM    632  CA  SER A  80       1.525  13.860  38.689  1.00  9.92           C  
+ATOM    638  CA  CYS A  81       2.478  12.332  35.293  1.00 11.81           C  
+ATOM    644  CA  SER A  82      -0.291  14.429  33.700  1.00  8.39           C  
+ATOM    650  CA  ALA A  83       1.845  17.572  34.488  1.00  3.28           C  
+ATOM    655  CA  LEU A  84       4.123  16.239  31.752  1.00  7.90           C  
+ATOM    663  CA  LEU A  85       1.405  16.116  29.022  1.00 12.44           C  
+ATOM    671  CA  GLN A  86       0.879  19.919  29.161  1.00  9.10           C  
+ATOM    680  CA  ASP A  87       1.690  22.328  26.302  1.00 10.61           C  
+ATOM    688  CA  ASN A  88       3.632  24.370  28.836  1.00 12.23           C  
+ATOM    696  CA  ILE A  89       6.870  22.389  29.476  1.00 13.79           C  
+ATOM    704  CA  ALA A  90       7.984  24.236  32.716  1.00  4.82           C  
+ATOM    709  CA  ASP A  91       7.156  21.142  34.843  1.00  9.24           C  
+ATOM    717  CA  ALA A  92       8.715  18.709  32.388  1.00  6.04           C  
+ATOM    722  CA  VAL A  93      11.930  20.800  32.534  1.00  6.61           C  
+ATOM    729  CA  ALA A  94      11.936  20.959  36.344  1.00  4.92           C  
+ATOM    734  CA  CYS A  95      11.616  17.162  36.469  1.00  8.65           C  
+ATOM    740  CA  ALA A  96      14.317  16.654  33.716  1.00  7.55           C  
+ATOM    745  CA  LYS A  97      16.727  18.819  35.916  1.00  5.43           C  
+ATOM    754  CA  ARG A  98      15.928  16.361  38.792  1.00  4.17           C  
+ATOM    765  CA  VAL A  99      16.687  13.249  36.632  1.00  9.96           C  
+ATOM    772  CA  VAL A 100      20.171  14.576  35.807  1.00  4.41           C  
+ATOM    779  CA  ARG A 101      21.051  15.517  39.372  1.00 12.18           C  
+ATOM    790  CA  ASP A 102      21.587  11.763  39.826  1.00 12.49           C  
+ATOM    798  CA  PRO A 103      25.203  10.663  38.967  1.00 27.95           C  
+ATOM    805  CA  GLN A 104      24.180   9.085  35.615  1.00 17.03           C  
+ATOM    814  CA  GLY A 105      23.152  12.509  34.376  1.00 14.25           C  
+ATOM    818  CA  ILE A 106      21.822  12.460  30.827  1.00 13.88           C  
+ATOM    826  CA  ARG A 107      22.998   8.865  30.304  1.00 10.92           C  
+ATOM    837  CA  ALA A 108      19.806   7.942  32.206  1.00 14.53           C  
+ATOM    842  CA  TRP A 109      18.092   8.046  28.807  1.00  7.93           C  
+ATOM    856  CA  VAL A 110      19.320   5.246  26.610  1.00 21.58           C  
+ATOM    863  CA  ALA A 111      18.052   7.080  23.473  1.00  9.07           C  
+ATOM    868  CA  TRP A 112      20.657   9.843  24.261  1.00  8.68           C  
+ATOM    882  CA  ARG A 113      23.398   7.147  24.301  1.00 12.69           C  
+ATOM    893  CA  ASN A 114      22.159   5.606  21.028  1.00 11.67           C  
+ATOM    901  CA  HIS A 115      21.548   8.841  19.126  1.00  5.08           C  
+ATOM    911  CA  CYS A 116      23.529  11.653  20.666  1.00  6.55           C  
+ATOM    917  CA  GLN A 117      26.647  10.712  22.691  1.00 17.09           C  
+ATOM    926  CA  ASN A 118      29.828  11.017  20.726  1.00 18.84           C  
+ATOM    934  CA  ARG A 119      28.092  12.558  17.834  1.00 12.66           C  
+ATOM    945  CA  ASP A 120      28.224  16.049  16.515  1.00 13.27           C  
+ATOM    953  CA  VAL A 121      24.894  17.327  17.850  1.00 12.43           C  
+ATOM    960  CA  ARG A 122      25.391  20.977  16.906  1.00 24.78           C  
+ATOM    971  CA  GLN A 123      22.872  20.787  14.087  1.00 16.18           C  
+ATOM    980  CA  TYR A 124      20.006  20.696  16.625  1.00 14.93           C  
+ATOM    992  CA  VAL A 125      20.571  24.327  17.698  1.00 14.40           C  
+ATOM    999  CA  GLN A 126      21.970  25.874  14.458  1.00 21.32           C  
+ATOM   1008  CA  GLY A 127      20.188  28.944  13.202  1.00 14.62           C  
+ATOM   1012  CA  CYS A 128      18.110  29.341  16.413  1.00 12.07           C  
+ATOM   1018  CA  GLY A 129      19.948  32.398  17.741  1.00 18.00           C  
+ATOM   1022  CA  VAL A 130      20.480  30.637  21.004  1.00 23.88           C  
+END

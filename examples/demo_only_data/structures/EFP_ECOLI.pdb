@@ -1,0 +1,219 @@
+HEADER    LIGASE                                  17-AUG-09   3A5Z              
+TITLE     CRYSTAL STRUCTURE OF ESCHERICHIA COLI GENX IN COMPLEX WITH ELONGATION 
+TITLE    2 FACTOR P                                                             
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: PUTATIVE LYSYL-TRNA SYNTHETASE;                            
+COMPND   3 CHAIN: A, C, E, G;                                                   
+COMPND   4 SYNONYM: GENX;                                                       
+COMPND   5 EC: 6.1.1.6;                                                         
+COMPND   6 ENGINEERED: YES;                                                     
+COMPND   7 MOL_ID: 2;                                                           
+COMPND   8 MOLECULE: ELONGATION FACTOR P;                                       
+COMPND   9 CHAIN: B, D, F, H;                                                   
+COMPND  10 SYNONYM: EF-P;                                                       
+COMPND  11 ENGINEERED: YES                                                      
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               
+SOURCE   3 ORGANISM_TAXID: 562;                                                 
+SOURCE   4 STRAIN: MC4100;                                                      
+SOURCE   5 GENE: GENX, ECS5136;                                                 
+SOURCE   6 EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 
+SOURCE   7 EXPRESSION_SYSTEM_TAXID: 562;                                        
+SOURCE   8 EXPRESSION_SYSTEM_STRAIN: BL21(DE3);                                 
+SOURCE   9 EXPRESSION_SYSTEM_VECTOR_TYPE: PLASMID;                              
+SOURCE  10 EXPRESSION_SYSTEM_PLASMID: PET28C;                                   
+SOURCE  11 MOL_ID: 2;                                                           
+SOURCE  12 ORGANISM_SCIENTIFIC: ESCHERICHIA COLI;                               
+SOURCE  13 ORGANISM_TAXID: 562;                                                 
+SOURCE  14 GENE: EFP, ECS5128;                                                  
+SOURCE  15 EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 
+SOURCE  16 EXPRESSION_SYSTEM_TAXID: 562;                                        
+SOURCE  17 EXPRESSION_SYSTEM_STRAIN: BL21(DE3);                                 
+SOURCE  18 EXPRESSION_SYSTEM_VECTOR_TYPE: PLASMID;                              
+SOURCE  19 EXPRESSION_SYSTEM_PLASMID: PET28C                                    
+KEYWDS    AMINOACYL-TRNA SYNTHETASE PARALOG, TRANSLATION, TRNA, LYSYL-TRNA      
+KEYWDS   2 SYNTHETASE, ELONGATION FACTOR, STRUCTURAL GENOMICS, NPPSFA, NATIONAL 
+KEYWDS   3 PROJECT ON PROTEIN STRUCTURAL AND FUNCTIONAL ANALYSES, RIKEN         
+KEYWDS   4 STRUCTURAL GENOMICS/PROTEOMICS INITIATIVE, RSGI, AMINOACYL-TRNA      
+KEYWDS   5 SYNTHETASE, LIGASE                                                   
+EXPDTA    X-RAY DIFFRACTION                                                     
+AUTHOR    T.SUMIDA,T.YANAGISAWA,R.ISHII,S.YOKOYAMA,RIKEN STRUCTURAL             
+AUTHOR   2 GENOMICS/PROTEOMICS INITIATIVE (RSGI)                                
+REVDAT   4   01-NOV-23 3A5Z    1       REMARK SEQADV                            
+REVDAT   3   23-OCT-13 3A5Z    1       JRNL   VERSN                             
+ATOM  13249  CA  THR H   3      70.181 115.521  25.382  1.00101.35           C  
+ATOM  13256  CA  TYR H   4      72.644 112.757  24.394  1.00101.68           C  
+ATOM  13268  CA  TYR H   5      72.126 109.481  22.538  1.00103.98           C  
+ATOM  13280  CA  SER H   6      73.372 106.000  23.456  1.00102.43           C  
+ATOM  13286  CA  ASN H   7      75.958 105.616  20.723  1.00 98.79           C  
+ATOM  13294  CA  ASP H   8      76.884 109.283  21.019  1.00 94.75           C  
+ATOM  13302  CA  PHE H   9      78.345 108.522  24.455  1.00 87.32           C  
+ATOM  13313  CA  ARG H  10      81.984 109.535  24.079  1.00 83.11           C  
+ATOM  13324  CA  ALA H  11      84.827 109.300  26.611  1.00 75.52           C  
+ATOM  13329  CA  GLY H  12      84.706 112.204  29.048  1.00 73.21           C  
+ATOM  13333  CA  LEU H  13      81.005 112.910  28.630  1.00 71.53           C  
+ATOM  13341  CA  LYS H  14      79.358 113.590  32.010  1.00 71.97           C  
+ATOM  13350  CA  ILE H  15      75.813 112.186  32.217  1.00 73.42           C  
+ATOM  13358  CA  MET H  16      72.910 111.865  34.684  1.00 78.56           C  
+ATOM  13366  CA  LEU H  17      71.671 108.367  35.557  1.00 81.65           C  
+ATOM  13374  CA  ASP H  18      69.023 107.691  38.204  1.00 85.95           C  
+ATOM  13382  CA  GLY H  19      70.160 110.805  40.047  1.00 83.54           C  
+ATOM  13386  CA  GLU H  20      73.841 109.834  40.197  1.00 81.85           C  
+ATOM  13395  CA  PRO H  21      76.383 111.599  37.927  1.00 78.37           C  
+ATOM  13402  CA  TYR H  22      78.514 109.367  35.695  1.00 72.53           C  
+ATOM  13414  CA  ALA H  23      81.472 109.928  33.394  1.00 65.94           C  
+ATOM  13419  CA  VAL H  24      81.685 107.933  30.196  1.00 63.64           C  
+ATOM  13426  CA  GLU H  25      84.927 106.087  29.542  1.00 69.09           C  
+ATOM  13435  CA  ALA H  26      84.133 103.850  26.599  1.00 67.81           C  
+ATOM  13440  CA  SER H  27      81.183 103.086  24.344  1.00 68.24           C  
+ATOM  13446  CA  GLU H  28      80.735 100.199  21.913  1.00 70.18           C  
+ATOM  13455  CA  PHE H  29      78.110  99.505  19.245  1.00 66.03           C  
+ATOM  13466  CA  VAL H  30      76.477  96.098  19.561  1.00 68.04           C  
+ATOM  13473  CA  LYS H  31      73.792  94.519  17.387  1.00 69.33           C  
+ATOM  13482  CA  PRO H  32      73.604  90.676  17.139  1.00 72.49           C  
+ATOM  13489  CA  GLY H  33      71.904  88.513  14.522  1.00 76.91           C  
+ATOM  13493  CA  LYS H  34      68.222  89.465  14.226  1.00 78.89           C  
+ATOM  13502  CA  GLY H  35      68.910  91.421  17.382  1.00 76.81           C  
+ATOM  13506  CA  GLN H  36      68.088  94.910  18.613  1.00 76.15           C  
+ATOM  13515  CA  ALA H  37      70.620  97.756  18.602  1.00 70.52           C  
+ATOM  13520  CA  PHE H  38      72.457  98.484  21.858  1.00 71.71           C  
+ATOM  13531  CA  ALA H  39      75.280 100.631  23.204  1.00 73.14           C  
+ATOM  13536  CA  ARG H  40      77.443  98.788  25.731  1.00 69.66           C  
+ATOM  13547  CA  VAL H  41      79.171 101.588  27.647  1.00 67.67           C  
+ATOM  13554  CA  LYS H  42      81.768 101.917  30.425  1.00 69.45           C  
+ATOM  13563  CA  LEU H  43      81.358 104.649  33.036  1.00 73.14           C  
+ATOM  13571  CA  ARG H  44      82.792 105.789  36.330  1.00 77.84           C  
+ATOM  13582  CA  ARG H  45      80.273 106.274  39.132  1.00 75.61           C  
+ATOM  13593  CA  LEU H  46      81.569 109.694  40.143  1.00 72.52           C  
+ATOM  13601  CA  LEU H  47      79.984 109.480  43.620  1.00 74.80           C  
+ATOM  13609  CA  THR H  48      81.608 106.159  44.515  1.00 74.82           C  
+ATOM  13616  CA  GLY H  49      84.718 106.471  42.353  1.00 76.93           C  
+ATOM  13620  CA  THR H  50      83.947 102.987  41.017  1.00 80.60           C  
+ATOM  13627  CA  ARG H  51      83.617 101.727  37.432  1.00 83.60           C  
+ATOM  13638  CA  VAL H  52      80.383 100.239  36.083  1.00 82.25           C  
+ATOM  13645  CA  GLU H  53      79.089  98.942  32.729  1.00 82.16           C  
+ATOM  13654  CA  LYS H  54      75.599  99.479  31.299  1.00 83.11           C  
+ATOM  13663  CA  THR H  55      73.735  98.331  28.190  1.00 79.97           C  
+ATOM  13670  CA  PHE H  56      71.405 100.889  26.640  1.00 76.51           C  
+ATOM  13681  CA  LYS H  57      69.172 100.985  23.555  1.00 76.54           C  
+ATOM  13690  CA  SER H  58      70.602 102.732  20.495  1.00 76.43           C  
+ATOM  13696  CA  THR H  59      67.480 104.870  20.765  1.00 79.03           C  
+ATOM  13703  CA  ASP H  60      67.706 105.522  24.531  1.00 81.94           C  
+ATOM  13711  CA  SER H  61      68.991 108.882  25.741  1.00 85.53           C  
+ATOM  13717  CA  ALA H  62      70.739 110.155  28.861  1.00 85.87           C  
+ATOM  13722  CA  GLU H  63      70.614 113.621  30.398  1.00 88.33           C  
+ATOM  13731  CA  GLY H  64      73.738 115.748  30.621  1.00 86.36           C  
+ATOM  13735  CA  ALA H  65      75.283 116.370  34.025  1.00 83.85           C  
+ATOM  13740  CA  ASP H  66      76.931 119.494  35.426  1.00 83.51           C  
+ATOM  13748  CA  VAL H  67      80.194 117.863  36.481  1.00 83.34           C  
+ATOM  13755  CA  VAL H  68      83.328 119.993  36.274  1.00 83.26           C  
+ATOM  13762  CA  ASP H  69      86.810 119.973  37.818  1.00 80.34           C  
+ATOM  13770  CA  MET H  70      88.260 123.119  39.368  1.00 81.68           C  
+ATOM  13778  CA  ASN H  71      91.668 123.829  40.901  1.00 80.50           C  
+ATOM  13786  CA  LEU H  72      91.294 125.025  44.469  1.00 75.06           C  
+ATOM  13794  CA  THR H  73      93.506 125.628  47.477  1.00 73.32           C  
+ATOM  13801  CA  TYR H  74      92.886 123.811  50.768  1.00 70.31           C  
+ATOM  13813  CA  LEU H  75      92.842 126.055  53.826  1.00 69.82           C  
+ATOM  13821  CA  TYR H  76      91.357 124.309  56.878  1.00 68.30           C  
+ATOM  13833  CA  ASN H  77      88.960 121.801  58.433  1.00 66.49           C  
+ATOM  13841  CA  ASP H  78      86.696 122.494  61.409  1.00 63.11           C  
+ATOM  13849  CA  GLY H  79      84.803 119.277  61.975  1.00 62.01           C  
+ATOM  13853  CA  GLU H  80      81.903 120.469  59.843  1.00 66.12           C  
+ATOM  13862  CA  PHE H  81      83.614 121.097  56.491  1.00 64.57           C  
+ATOM  13873  CA  TRP H  82      86.977 121.173  54.709  1.00 62.92           C  
+ATOM  13887  CA  HIS H  83      87.397 124.736  53.377  1.00 68.67           C  
+ATOM  13897  CA  PHE H  84      88.875 125.529  49.949  1.00 73.63           C  
+ATOM  13908  CA  MET H  85      89.429 128.783  48.099  1.00 83.87           C  
+ATOM  13916  CA  ASN H  86      89.238 129.858  44.465  1.00 92.56           C  
+ATOM  13924  CA  ASN H  87      92.338 131.927  43.706  1.00101.55           C  
+ATOM  13932  CA  GLU H  88      90.903 133.510  40.565  1.00109.60           C  
+ATOM  13941  CA  THR H  89      87.276 133.955  41.624  1.00110.58           C  
+ATOM  13948  CA  PHE H  90      88.483 134.643  45.183  1.00110.81           C  
+ATOM  13959  CA  GLU H  91      85.378 132.881  46.510  1.00107.62           C  
+ATOM  13968  CA  GLN H  92      85.084 129.887  48.859  1.00 99.57           C  
+ATOM  13977  CA  LEU H  93      83.748 126.326  48.735  1.00 88.92           C  
+ATOM  13985  CA  SER H  94      83.129 123.730  51.428  1.00 78.49           C  
+ATOM  13991  CA  ALA H  95      83.479 119.971  51.054  1.00 72.32           C  
+ATOM  13996  CA  ASP H  96      82.027 117.386  53.432  1.00 68.62           C  
+ATOM  14004  CA  ALA H  97      83.591 114.142  54.666  1.00 65.72           C  
+ATOM  14009  CA  LYS H  98      82.009 112.215  51.823  1.00 64.17           C  
+ATOM  14018  CA  ALA H  99      83.662 114.467  49.239  1.00 61.32           C  
+ATOM  14023  CA  ILE H 100      87.172 114.595  50.755  1.00 62.15           C  
+ATOM  14031  CA  GLY H 101      86.568 110.924  51.433  1.00 64.43           C  
+ATOM  14035  CA  ASP H 102      89.812 109.050  51.924  1.00 67.92           C  
+ATOM  14043  CA  ASN H 103      92.081 112.039  51.147  1.00 64.83           C  
+ATOM  14051  CA  ALA H 104      91.664 114.046  54.349  1.00 60.13           C  
+ATOM  14056  CA  LYS H 105      95.042 112.763  55.565  1.00 56.94           C  
+ATOM  14065  CA  TRP H 106      97.082 114.360  52.781  1.00 53.34           C  
+ATOM  14079  CA  LEU H 107      95.636 117.866  53.048  1.00 58.98           C  
+ATOM  14087  CA  LEU H 108      97.994 120.578  54.280  1.00 65.23           C  
+ATOM  14095  CA  ASP H 109      97.048 124.280  54.412  1.00 68.42           C  
+ATOM  14103  CA  GLN H 110      97.755 125.907  51.025  1.00 70.99           C  
+ATOM  14112  CA  ALA H 111      97.706 122.715  48.948  1.00 74.01           C  
+ATOM  14117  CA  GLU H 112      96.443 123.148  45.386  1.00 79.46           C  
+ATOM  14126  CA  CYS H 113      93.745 120.502  44.825  1.00 77.37           C  
+ATOM  14132  CA  ILE H 114      91.648 119.090  41.976  1.00 72.36           C  
+ATOM  14140  CA  VAL H 115      88.086 119.338  43.247  1.00 71.17           C  
+ATOM  14147  CA  THR H 116      85.417 117.713  41.097  1.00 71.94           C  
+ATOM  14154  CA  LEU H 117      82.137 119.597  41.440  1.00 75.13           C  
+ATOM  14162  CA  TRP H 118      78.681 118.200  40.709  1.00 79.32           C  
+ATOM  14176  CA  ASN H 119      76.223 121.092  40.443  1.00 80.89           C  
+ATOM  14184  CA  GLY H 120      78.539 123.523  42.200  1.00 82.80           C  
+ATOM  14188  CA  GLN H 121      79.226 121.281  45.189  1.00 79.97           C  
+ATOM  14197  CA  PRO H 122      82.338 119.086  45.622  1.00 70.22           C  
+ATOM  14204  CA  ILE H 123      81.894 115.338  45.254  1.00 64.27           C  
+ATOM  14212  CA  SER H 124      85.553 114.328  45.278  1.00 62.25           C  
+ATOM  14218  CA  VAL H 125      88.885 115.932  46.110  1.00 64.09           C  
+ATOM  14225  CA  THR H 126      92.305 115.093  44.730  1.00 65.60           C  
+ATOM  14232  CA  PRO H 127      95.372 116.381  46.601  1.00 63.45           C  
+ATOM  14239  CA  PRO H 128      98.795 117.096  45.088  1.00 61.53           C  
+ATOM  14246  CA  ASN H 129     100.600 113.966  43.853  1.00 60.96           C  
+ATOM  14254  CA  PHE H 130     103.412 114.535  46.318  1.00 60.89           C  
+ATOM  14265  CA  VAL H 131     103.145 116.242  49.687  1.00 61.74           C  
+ATOM  14272  CA  GLU H 132     105.692 117.210  52.317  1.00 67.21           C  
+ATOM  14281  CA  LEU H 133     104.650 116.294  55.840  1.00 67.35           C  
+ATOM  14289  CA  GLU H 134     106.632 116.462  59.091  1.00 70.53           C  
+ATOM  14298  CA  ILE H 135     106.892 113.384  61.299  1.00 71.70           C  
+ATOM  14306  CA  VAL H 136     105.464 113.835  64.801  1.00 75.44           C  
+ATOM  14313  CA  ASP H 137     105.660 110.329  66.222  1.00 80.53           C  
+ATOM  14321  CA  THR H 138     107.510 107.069  65.678  1.00 84.82           C  
+ATOM  14328  CA  ASP H 139     109.967 104.493  67.103  1.00 92.96           C  
+ATOM  14336  CA  PRO H 140     113.648 104.208  65.959  1.00 93.66           C  
+ATOM  14343  CA  GLY H 151     110.466  99.534  57.663  1.00 81.92           C  
+ATOM  14347  CA  LYS H 152     108.640 101.230  60.564  1.00 79.93           C  
+ATOM  14356  CA  PRO H 153     105.340 103.140  60.803  1.00 77.73           C  
+ATOM  14363  CA  ALA H 154     105.363 106.902  61.421  1.00 73.53           C  
+ATOM  14368  CA  THR H 155     102.602 109.426  62.133  1.00 70.13           C  
+ATOM  14375  CA  LEU H 156     102.443 112.594  60.002  1.00 65.36           C  
+ATOM  14383  CA  SER H 157     101.382 116.058  61.174  1.00 59.83           C  
+ATOM  14389  CA  THR H 158      98.115 115.310  59.378  1.00 58.66           C  
+ATOM  14396  CA  GLY H 159      97.598 112.096  61.288  1.00 56.87           C  
+ATOM  14400  CA  ALA H 160      98.467 109.944  58.312  1.00 59.15           C  
+ATOM  14405  CA  VAL H 161     100.128 106.614  59.081  1.00 65.88           C  
+ATOM  14412  CA  VAL H 162     103.083 105.941  56.773  1.00 71.32           C  
+ATOM  14419  CA  LYS H 163     105.802 103.272  56.686  1.00 76.43           C  
+ATOM  14428  CA  VAL H 164     109.340 104.667  56.601  1.00 78.46           C  
+ATOM  14435  CA  PRO H 165     113.072 103.765  56.756  1.00 80.54           C  
+ATOM  14442  CA  LEU H 166     114.418 103.057  60.247  1.00 77.51           C  
+ATOM  14450  CA  PHE H 167     116.768 106.020  59.821  1.00 76.37           C  
+ATOM  14461  CA  VAL H 168     114.011 108.633  59.638  1.00 76.32           C  
+ATOM  14468  CA  GLN H 169     113.174 110.136  62.994  1.00 76.67           C  
+ATOM  14477  CA  ILE H 170     110.587 112.487  64.459  1.00 74.61           C  
+ATOM  14485  CA  GLY H 171     111.018 116.113  63.398  1.00 74.37           C  
+ATOM  14489  CA  GLU H 172     112.093 115.305  59.842  1.00 72.90           C  
+ATOM  14498  CA  VAL H 173     110.060 116.275  56.800  1.00 68.67           C  
+ATOM  14505  CA  ILE H 174     109.315 113.561  54.269  1.00 64.05           C  
+ATOM  14513  CA  LYS H 175     107.614 113.312  50.886  1.00 63.76           C  
+ATOM  14522  CA  VAL H 176     104.863 110.858  50.117  1.00 62.86           C  
+ATOM  14529  CA  ASP H 177     103.045 109.901  46.934  1.00 66.00           C  
+ATOM  14537  CA  THR H 178      99.425 110.554  47.912  1.00 66.24           C  
+ATOM  14544  CA  ARG H 179      98.448 108.216  45.088  1.00 68.14           C  
+ATOM  14555  CA  SER H 180      99.990 105.186  46.790  1.00 65.46           C  
+ATOM  14561  CA  GLY H 181     100.405 106.750  50.229  1.00 64.02           C  
+ATOM  14565  CA  GLU H 182     104.040 105.655  50.296  1.00 64.35           C  
+ATOM  14574  CA  TYR H 183     107.306 107.187  51.492  1.00 64.19           C  
+ATOM  14586  CA  VAL H 184     109.300 108.733  48.663  1.00 64.23           C  
+ATOM  14593  CA  SER H 185     112.259 110.463  50.327  1.00 66.57           C  
+ATOM  14599  CA  ARG H 186     113.370 113.181  52.748  1.00 69.97           C  
+ATOM  14610  CA  VAL H 187     113.230 116.982  52.500  1.00 72.19           C  
+END

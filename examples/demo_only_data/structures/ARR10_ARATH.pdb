@@ -1,0 +1,108 @@
+HEADER    DNA BINDING PROTEIN                     25-OCT-01   1IRZ              
+TITLE     SOLUTION STRUCTURE OF ARR10-B BELONGING TO THE GARP FAMILY OF PLANT   
+TITLE    2 MYB-RELATED DNA BINDING MOTIFS OF THE ARABIDOPSIS RESPONSE REGULATORS
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: ARR10-B;                                                   
+COMPND   3 CHAIN: A;                                                            
+COMPND   4 FRAGMENT: DNA BINDING DOMAIN;                                        
+COMPND   5 SYNONYM: RECEIVER-LIKE PROTEIN 4, ARP4;                              
+COMPND   6 ENGINEERED: YES                                                      
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 ORGANISM_SCIENTIFIC: ARABIDOPSIS THALIANA;                           
+SOURCE   3 ORGANISM_COMMON: THALE CRESS;                                        
+SOURCE   4 ORGANISM_TAXID: 3702;                                                
+SOURCE   5 EXPRESSION_SYSTEM: ESCHERICHIA COLI BL21(DE3);                       
+SOURCE   6 EXPRESSION_SYSTEM_TAXID: 469008;                                     
+SOURCE   7 EXPRESSION_SYSTEM_STRAIN: BL21(DE3);                                 
+SOURCE   8 EXPRESSION_SYSTEM_VECTOR_TYPE: PLASMID;                              
+SOURCE   9 EXPRESSION_SYSTEM_PLASMID: PET22B(+)                                 
+KEYWDS    HELIX-TURN-HELIX, DNA BINDING PROTEIN                                 
+EXPDTA    SOLUTION NMR                                                          
+NUMMDL    15                                                                    
+AUTHOR    T.YAMAZAKI,E.KATOH,K.HOSODA,T.MIZUNO                                  
+REVDAT   4   27-DEC-23 1IRZ    1       REMARK                                   
+REVDAT   3   23-FEB-22 1IRZ    1       REMARK                                   
+REVDAT   2   24-FEB-09 1IRZ    1       VERSN                                    
+REVDAT   1   11-FEB-03 1IRZ    0                                                
+JRNL        AUTH   K.HOSODA,A.IMAMURA,E.KATOH,T.HATTA,M.TACHIKI,H.YAMADA,       
+JRNL        AUTH 2 T.MIZUNO,T.YAMAZAKI                                          
+JRNL        TITL   MOLECULAR STRUCTURE OF THE GARP FAMILY OF PLANT MYB-RELATED  
+JRNL        TITL 2 DNA BINDING MOTIFS OF THE ARABIDOPSIS RESPONSE REGULATORS    
+JRNL        REF    PLANT CELL                    V.  14  2015 2003              
+JRNL        REFN                   ISSN 1040-4651                               
+JRNL        PMID   12215502                                                     
+JRNL        DOI    10.1105/TPC.002733                                           
+REMARK   2                                                                      
+REMARK   2 RESOLUTION. NOT APPLICABLE.                                          
+REMARK   3                                                                      
+REMARK   3 REFINEMENT.                                                          
+REMARK   3   PROGRAM     : NMRPIPE 1.8, X-PLOR 3.1                              
+REMARK   3   AUTHORS     : FRANK DELAGLIO (NMRPIPE), BRUNGER (X-PLOR)           
+REMARK   3                                                                      
+REMARK   3  OTHER REFINEMENT REMARKS: NULL                                      
+REMARK   4                                                                      
+ATOM      2  CA  THR A   1      25.172   4.176  -2.993  1.00  0.00           C  
+ATOM     18  CA  ALA A   2      21.456   5.051  -2.823  1.00  0.00           C  
+ATOM     28  CA  GLN A   3      18.899   7.308  -1.099  1.00  0.00           C  
+ATOM     45  CA  LYS A   4      18.650   7.039   2.705  1.00  0.00           C  
+ATOM     67  CA  LYS A   5      15.117   7.892   3.890  1.00  0.00           C  
+ATOM     89  CA  PRO A   6      14.156   6.625   7.362  1.00  0.00           C  
+ATOM    103  CA  ARG A   7      10.995   4.467   7.569  1.00  0.00           C  
+ATOM    127  CA  VAL A   8       9.581   4.966   4.053  1.00  0.00           C  
+ATOM    143  CA  LEU A   9       5.930   6.056   4.374  1.00  0.00           C  
+ATOM    162  CA  TRP A  10       4.865   6.364   0.718  1.00  0.00           C  
+ATOM    186  CA  THR A  11       7.613   6.956  -1.870  1.00  0.00           C  
+ATOM    200  CA  HIS A  12       8.045   5.767  -5.476  1.00  0.00           C  
+ATOM    217  CA  GLU A  13       9.822   2.772  -3.899  1.00  0.00           C  
+ATOM    232  CA  LEU A  14       7.218   1.650  -1.337  1.00  0.00           C  
+ATOM    251  CA  HIS A  15       4.682   2.265  -4.130  1.00  0.00           C  
+ATOM    268  CA  ASN A  16       6.376  -0.195  -6.516  1.00  0.00           C  
+ATOM    282  CA  LYS A  17       6.227  -3.000  -3.925  1.00  0.00           C  
+ATOM    304  CA  PHE A  18       2.555  -2.386  -3.064  1.00  0.00           C  
+ATOM    324  CA  LEU A  19       1.768  -2.444  -6.807  1.00  0.00           C  
+ATOM    343  CA  ALA A  20       3.520  -5.736  -7.623  1.00  0.00           C  
+ATOM    353  CA  ALA A  21       2.151  -7.210  -4.380  1.00  0.00           C  
+ATOM    363  CA  VAL A  22      -1.476  -6.394  -5.228  1.00  0.00           C  
+ATOM    379  CA  ASP A  23      -1.073  -7.489  -8.847  1.00  0.00           C  
+ATOM    391  CA  HIS A  24       0.711 -10.659  -7.703  1.00  0.00           C  
+ATOM    408  CA  LEU A  25      -2.479 -11.400  -5.728  1.00  0.00           C  
+ATOM    427  CA  GLY A  26      -4.976  -9.782  -8.124  1.00  0.00           C  
+ATOM    434  CA  VAL A  27      -6.288  -6.370  -7.011  1.00  0.00           C  
+ATOM    450  CA  GLU A  28      -9.702  -8.079  -7.148  1.00  0.00           C  
+ATOM    465  CA  ARG A  29      -8.960 -10.467  -4.246  1.00  0.00           C  
+ATOM    489  CA  ALA A  30      -5.793  -8.775  -2.922  1.00  0.00           C  
+ATOM    499  CA  VAL A  31      -6.238  -7.879   0.767  1.00  0.00           C  
+ATOM    515  CA  PRO A  32      -4.167  -5.352   2.723  1.00  0.00           C  
+ATOM    529  CA  LYS A  33      -3.673  -7.830   5.580  1.00  0.00           C  
+ATOM    551  CA  LYS A  34      -1.809 -10.408   3.479  1.00  0.00           C  
+ATOM    573  CA  ILE A  35      -0.074  -7.701   1.435  1.00  0.00           C  
+ATOM    592  CA  LEU A  36       0.982  -6.216   4.781  1.00  0.00           C  
+ATOM    611  CA  ASP A  37       3.484  -9.093   4.845  1.00  0.00           C  
+ATOM    623  CA  LEU A  38       4.519  -8.259   1.265  1.00  0.00           C  
+ATOM    642  CA  MET A  39       5.749  -4.877   2.545  1.00  0.00           C  
+ATOM    659  CA  ASN A  40       7.455  -6.188   5.702  1.00  0.00           C  
+ATOM    673  CA  VAL A  41       8.309  -2.528   6.388  1.00  0.00           C  
+ATOM    689  CA  ASP A  42       8.481  -1.068   9.914  1.00  0.00           C  
+ATOM    701  CA  LYS A  43       5.695   1.339  10.946  1.00  0.00           C  
+ATOM    723  CA  LEU A  44       3.573  -0.210   8.166  1.00  0.00           C  
+ATOM    742  CA  THR A  45       0.403  -1.977   9.368  1.00  0.00           C  
+ATOM    756  CA  ARG A  46      -2.555  -3.558   7.532  1.00  0.00           C  
+ATOM    780  CA  GLU A  47      -4.807  -0.606   8.445  1.00  0.00           C  
+ATOM    795  CA  ASN A  48      -2.381   1.728   6.637  1.00  0.00           C  
+ATOM    809  CA  VAL A  49      -2.634  -0.200   3.349  1.00  0.00           C  
+ATOM    825  CA  ALA A  50      -6.374  -0.806   3.807  1.00  0.00           C  
+ATOM    835  CA  SER A  51      -6.929   2.961   4.113  1.00  0.00           C  
+ATOM    846  CA  HIS A  52      -5.267   3.883   0.799  1.00  0.00           C  
+ATOM    863  CA  LEU A  53      -7.313   1.107  -0.847  1.00  0.00           C  
+ATOM    882  CA  GLN A  54     -10.671   2.321   0.516  1.00  0.00           C  
+ATOM    899  CA  LYS A  55      -9.572   5.859  -0.422  1.00  0.00           C  
+ATOM    921  CA  PHE A  56      -9.125   4.904  -4.095  1.00  0.00           C  
+ATOM    941  CA  ARG A  57     -12.677   3.552  -4.471  1.00  0.00           C  
+ATOM    965  CA  VAL A  58     -13.852   6.894  -3.066  1.00  0.00           C  
+ATOM    981  CA  ALA A  59     -11.605   8.631  -5.611  1.00  0.00           C  
+ATOM    991  CA  LEU A  60     -13.147   6.302  -8.219  1.00  0.00           C  
+ATOM   1010  CA  LYS A  61     -16.766   7.253  -7.448  1.00  0.00           C  
+ATOM   1032  CA  LYS A  62     -16.850  10.971  -8.313  1.00  0.00           C  
+ATOM   1054  CA  VAL A  63     -14.114  11.524 -10.925  1.00  0.00           C  
+ATOM   1070  CA  SER A  64     -14.344  14.634 -13.135  1.00  0.00           C  
+END

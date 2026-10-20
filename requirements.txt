@@ -1,0 +1,9 @@
+# Exact versions this project was developed and tested with (Python 3.9.6, macOS arm64). Newer versions will probably work but are untested.
+torch==2.2.2
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.13.1
+scikit-learn==1.6.1
+PyYAML==6.0.3
+requests==2.32.5
+transformers==4.40.2

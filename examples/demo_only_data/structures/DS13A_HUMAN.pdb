@@ -1,0 +1,215 @@
+HEADER    HYDROLASE                               04-MAY-17   5XJV              
+TITLE     TWO INTERMEDIATE STATES OF CONFORMATION SWITCH IN DUAL SPECIFICITY    
+TITLE    2 PHOSPHATASE 13A                                                      
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: DUAL SPECIFICITY PROTEIN PHOSPHATASE 13 ISOFORM A;         
+COMPND   3 CHAIN: A, B;                                                         
+COMPND   4 FRAGMENT: UNP RESIDUES 1-185;                                        
+COMPND   5 SYNONYM: DUSP13A,BRANCHING-ENZYME INTERACTING DSP,MUSCLE-RESTRICTED  
+COMPND   6 DSP,MDSP;                                                            
+COMPND   7 EC: 3.1.3.16,3.1.3.48;                                               
+COMPND   8 ENGINEERED: YES;                                                     
+COMPND   9 MUTATION: YES                                                        
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   
+SOURCE   3 ORGANISM_COMMON: HUMAN;                                              
+SOURCE   4 ORGANISM_TAXID: 9606;                                                
+SOURCE   5 GENE: DUSP13, BEDP, DUSP13A, MDSP;                                   
+SOURCE   6 EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 
+SOURCE   7 EXPRESSION_SYSTEM_TAXID: 562                                         
+KEYWDS    DUSP13A, PTP, CONFORMATION SWITCH, CATALYTIC DOMAIN, HYDROLASE        
+EXPDTA    X-RAY DIFFRACTION                                                     
+AUTHOR    C.H.WEI,H.G.MIN,H.J.CHUN,S.E.RYU                                      
+REVDAT   3   22-NOV-23 5XJV    1       REMARK                                   
+REVDAT   2   13-OCT-21 5XJV    1       REMARK                                   
+REVDAT   1   11-APR-18 5XJV    0                                                
+JRNL        AUTH   C.H.WEI,H.G.MIN,M.KIM,G.H.KIM,H.J.CHUN,S.E.RYU               
+JRNL        TITL   TWO INTERMEDIATE STATES OF THE CONFORMATIONAL SWITCH IN DUAL 
+JRNL        TITL 2 SPECIFICITY PHOSPHATASE 13A                                  
+JRNL        REF    PHARMACOL. RES.               V. 128   211 2018              
+JRNL        REFN                   ISSN 1096-1186                               
+JRNL        PMID   29106959                                                     
+JRNL        DOI    10.1016/J.PHRS.2017.10.006                                   
+REMARK   2                                                                      
+REMARK   2 RESOLUTION.    1.69 ANGSTROMS.                                       
+REMARK   3                                                                      
+REMARK   3 REFINEMENT.                                                          
+REMARK   3   PROGRAM     : REFMAC 5.8.0158                                      
+REMARK   3   AUTHORS     : MURSHUDOV,SKUBAK,LEBEDEV,PANNU,STEINER,              
+REMARK   3               : NICHOLLS,WINN,LONG,VAGIN                             
+REMARK   3                                                                      
+REMARK   3    REFINEMENT TARGET : MAXIMUM LIKELIHOOD                            
+REMARK   3                                                                      
+REMARK   3  DATA USED IN REFINEMENT.                                            
+ATOM   1329  CA  ALA B  15     -27.868  20.341   5.653  1.00 42.37           C  
+ATOM   1334  CA  THR B  16     -25.219  17.531   5.798  1.00 39.20           C  
+ATOM   1341  CA  PRO B  17     -21.834  19.353   6.506  1.00 32.14           C  
+ATOM   1348  CA  ALA B  18     -19.385  19.199   3.556  1.00 21.36           C  
+ATOM   1353  CA  PRO B  19     -17.246  16.105   3.867  1.00 16.89           C  
+ATOM   1360  CA  SER B  20     -13.724  16.314   5.340  1.00 19.06           C  
+ATOM   1366  CA  ILE B  21     -10.672  15.253   3.378  1.00 20.12           C  
+ATOM   1374  CA  LEU B  22     -10.579  12.049   5.270  1.00 18.79           C  
+ATOM   1382  CA  GLU B  23     -14.249  11.293   4.461  1.00 15.92           C  
+ATOM   1391  CA  LEU B  24     -13.590  12.094   0.790  1.00 15.08           C  
+ATOM   1399  CA  GLU B  25     -10.660   9.787   0.567  1.00 16.98           C  
+ATOM   1408  CA  GLU B  26     -12.709   6.987   2.100  1.00 19.08           C  
+ATOM   1417  CA  LEU B  27     -15.498   7.579  -0.461  1.00 16.70           C  
+ATOM   1425  CA  LEU B  28     -12.992   7.664  -3.280  1.00 17.53           C  
+ATOM   1433  CA  ARG B  29     -11.320   4.416  -2.118  1.00 23.46           C  
+ATOM   1444  CA  ALA B  30     -14.753   2.690  -2.233  1.00 29.50           C  
+ATOM   1449  CA  GLY B  31     -15.696   2.033  -5.859  1.00 45.50           C  
+ATOM   1453  CA  LYS B  32     -15.133  -0.745  -8.372  1.00 49.29           C  
+ATOM   1462  CA  SER B  33     -11.590  -1.969  -8.722  1.00 49.25           C  
+ATOM   1468  CA  SER B  34     -10.901  -0.983 -12.313  1.00 42.18           C  
+ATOM   1474  CA  ALA B  35      -8.229   0.098 -14.716  1.00 35.01           C  
+ATOM   1479  CA  SER B  36      -9.571   1.498 -17.963  1.00 24.85           C  
+ATOM   1485  CA  ARG B  37      -7.959   4.373 -19.870  1.00 17.20           C  
+ATOM   1496  CA  VAL B  38     -11.236   6.174 -20.494  1.00 14.66           C  
+ATOM   1503  CA  ASP B  39     -14.660   5.862 -18.966  1.00 11.64           C  
+ATOM   1511  CA  GLU B  40     -18.082   7.363 -19.501  1.00 11.12           C  
+ATOM   1520  CA  VAL B  41     -18.967   8.748 -16.029  1.00 10.60           C  
+ATOM   1527  CA  TRP B  42     -22.147  10.649 -16.923  1.00 11.21           C  
+ATOM   1541  CA  PRO B  43     -24.170  10.559 -20.131  1.00 11.88           C  
+ATOM   1548  CA  ASN B  44     -21.884  11.530 -23.035  1.00 10.31           C  
+ATOM   1556  CA  LEU B  45     -19.195  12.817 -20.598  1.00  9.52           C  
+ATOM   1564  CA  PHE B  46     -15.901  10.874 -20.438  1.00 10.03           C  
+ATOM   1575  CA  ILE B  47     -12.805  11.099 -18.307  1.00  9.57           C  
+ATOM   1583  CA  GLY B  48      -9.606   9.693 -19.644  1.00 10.87           C  
+ATOM   1587  CA  ASP B  49      -5.847   9.763 -19.670  1.00 13.05           C  
+ATOM   1595  CA  ALA B  50      -3.233  11.247 -21.985  1.00 14.79           C  
+ATOM   1600  CA  ALA B  51      -3.061   8.198 -24.236  1.00 15.36           C  
+ATOM   1605  CA  THR B  52      -6.743   8.564 -24.899  1.00 16.15           C  
+ATOM   1612  CA  ALA B  53      -6.476  12.238 -25.948  1.00 13.13           C  
+ATOM   1617  CA  ASN B  54      -3.483  11.443 -28.159  1.00 15.62           C  
+ATOM   1625  CA  ASN B  55      -5.384   8.861 -30.421  1.00 13.69           C  
+ATOM   1633  CA  ARG B  56      -7.586  10.937 -32.680  1.00 16.35           C  
+ATOM   1644  CA  PHE B  57      -8.818   7.890 -34.583  1.00 21.28           C  
+ATOM   1655  CA  GLU B  58     -10.146   6.264 -31.323  1.00 21.49           C  
+ATOM   1664  CA  LEU B  59     -11.759   9.609 -30.346  1.00 13.03           C  
+ATOM   1672  CA  TRP B  60     -13.468   9.767 -33.649  1.00 21.07           C  
+ATOM   1686  CA  LYS B  61     -14.770   6.138 -33.140  1.00 24.13           C  
+ATOM   1695  CA  LEU B  62     -16.088   7.059 -29.759  1.00 19.49           C  
+ATOM   1703  CA  GLY B  63     -17.838  10.177 -31.132  1.00 17.01           C  
+ATOM   1707  CA  ILE B  64     -15.977  12.771 -29.125  1.00 12.15           C  
+ATOM   1715  CA  THR B  65     -16.760  16.351 -30.378  1.00 13.51           C  
+ATOM   1722  CA  HIS B  66     -15.408  18.319 -27.459  1.00 12.60           C  
+ATOM   1732  CA  VAL B  67     -12.094  18.003 -25.603  1.00 11.83           C  
+ATOM   1739  CA  LEU B  68     -11.296  19.590 -22.254  1.00 12.09           C  
+ATOM   1747  CA  ASN B  69      -7.575  19.129 -21.580  1.00 10.82           C  
+ATOM   1755  CA  ALA B  70      -7.161  19.741 -17.821  1.00 11.43           C  
+ATOM   1760  CA  ALA B  71      -3.324  19.435 -18.159  1.00 13.48           C  
+ATOM   1765  CA  HIS B  72      -2.841  21.838 -21.015  1.00 18.20           C  
+ATOM   1775  CA  LYS B  73       0.666  23.213 -21.616  1.00 33.67           C  
+ATOM   1784  CA  GLY B  74       0.649  26.584 -23.426  1.00 51.12           C  
+ATOM   1788  CA  LEU B  75      -1.529  29.135 -21.489  1.00 53.42           C  
+ATOM   1796  CA  TYR B  76      -5.374  28.771 -21.137  1.00 57.34           C  
+ATOM   1808  CA  ALA B  77      -6.288  28.027 -24.759  1.00 58.56           C  
+ATOM   1813  CA  GLN B  78      -9.718  27.781 -26.539  1.00 62.93           C  
+ATOM   1822  CA  GLY B  79     -11.258  27.721 -30.062  1.00 67.27           C  
+ATOM   1826  CA  GLY B  80      -9.158  27.450 -33.234  1.00 76.71           C  
+ATOM   1830  CA  PRO B  81      -6.398  24.823 -32.257  1.00 87.52           C  
+ATOM   1837  CA  ASP B  82      -4.513  22.646 -34.823  1.00 59.52           C  
+ATOM   1845  CA  PHE B  83      -4.456  19.224 -33.204  1.00 34.47           C  
+ATOM   1856  CA  TYR B  84      -8.127  18.004 -33.338  1.00 26.99           C  
+ATOM   1868  CA  GLY B  85      -9.125  19.918 -36.449  1.00 36.19           C  
+ATOM   1872  CA  SER B  86     -12.259  21.908 -37.291  1.00 50.03           C  
+ATOM   1878  CA  SER B  87     -14.737  19.257 -36.092  1.00 36.96           C  
+ATOM   1884  CA  VAL B  88     -13.602  19.383 -32.424  1.00 21.22           C  
+ATOM   1891  CA  SER B  89     -13.950  22.191 -29.913  1.00 18.43           C  
+ATOM   1897  CA  TYR B  90     -11.094  22.358 -27.468  1.00 15.18           C  
+ATOM   1909  CA  LEU B  91     -10.595  23.961 -24.084  1.00 14.15           C  
+ATOM   1917  CA  GLY B  92      -7.217  23.981 -22.433  1.00 15.30           C  
+ATOM   1921  CA  VAL B  93      -6.987  24.419 -18.668  1.00 15.54           C  
+ATOM   1928  CA  PRO B  94      -3.354  24.829 -17.634  1.00 16.96           C  
+ATOM   1935  CA  ALA B  95      -3.566  23.000 -14.321  1.00 16.27           C  
+ATOM   1940  CA  HIS B  96      -0.729  21.394 -12.376  1.00 17.04           C  
+ATOM   1950  CA  ASP B  97      -1.488  18.363 -10.217  1.00 15.97           C  
+ATOM   1958  CA  LEU B  98      -0.329  19.948  -6.956  1.00 18.23           C  
+ATOM   1966  CA  PRO B  99      -2.201  20.666  -3.711  1.00 20.61           C  
+ATOM   1973  CA  ASP B 100      -1.273  24.296  -3.861  1.00 21.41           C  
+ATOM   1981  CA  PHE B 101      -2.599  24.798  -7.390  1.00 15.49           C  
+ATOM   1992  CA  ASP B 102      -5.797  26.848  -7.588  1.00 16.21           C  
+ATOM   2000  CA  ILE B 103      -7.864  24.818  -9.961  1.00 12.95           C  
+ATOM   2008  CA  SER B 104     -11.108  26.281  -8.515  1.00 14.46           C  
+ATOM   2014  CA  ALA B 105     -10.396  29.435 -10.499  1.00 15.62           C  
+ATOM   2019  CA  TYR B 106     -11.271  27.392 -13.606  1.00 15.53           C  
+ATOM   2031  CA  PHE B 107     -14.411  25.681 -12.268  1.00 13.99           C  
+ATOM   2042  CA  SER B 108     -16.753  28.129 -13.926  1.00 15.89           C  
+ATOM   2048  CA  SER B 109     -15.248  28.176 -17.366  1.00 15.98           C  
+ATOM   2054  CA  ALA B 110     -14.765  24.379 -17.423  1.00 12.99           C  
+ATOM   2059  CA  ALA B 111     -18.260  23.673 -16.226  1.00 14.07           C  
+ATOM   2064  CA  ASP B 112     -19.759  26.082 -18.797  1.00 17.06           C  
+ATOM   2072  CA  PHE B 113     -17.775  24.496 -21.668  1.00 10.75           C  
+ATOM   2083  CA  ILE B 114     -19.064  21.048 -20.556  1.00 10.27           C  
+ATOM   2091  CA  HIS B 115     -22.615  22.284 -20.093  1.00 14.31           C  
+ATOM   2101  CA  ARG B 116     -22.842  23.922 -23.541  1.00 15.14           C  
+ATOM   2112  CA  ALA B 117     -21.490  20.720 -25.067  1.00 15.15           C  
+ATOM   2117  CA  LEU B 118     -23.881  18.362 -23.294  1.00 13.63           C  
+ATOM   2125  CA  ASN B 119     -26.824  20.644 -24.301  1.00 18.77           C  
+ATOM   2133  CA  THR B 120     -25.806  20.239 -27.962  1.00 19.62           C  
+ATOM   2140  CA  PRO B 121     -27.511  17.221 -29.507  1.00 19.42           C  
+ATOM   2147  CA  GLY B 122     -25.090  14.553 -30.474  1.00 17.90           C  
+ATOM   2151  CA  ALA B 123     -22.060  16.025 -28.743  1.00 13.50           C  
+ATOM   2156  CA  LYS B 124     -19.823  14.037 -26.433  1.00 11.27           C  
+ATOM   2165  CA  VAL B 125     -17.126  15.481 -24.189  1.00  9.98           C  
+ATOM   2172  CA  LEU B 126     -13.755  14.083 -23.173  1.00 10.42           C  
+ATOM   2180  CA  VAL B 127     -12.130  15.649 -20.116  1.00  8.66           C  
+ATOM   2187  CA  HIS B 128      -8.630  14.422 -19.754  1.00  9.44           C  
+ATOM   2197  CA  SER B 129      -5.437  14.903 -17.882  1.00 11.08           C  
+ATOM   2203  CA  VAL B 130      -2.183  12.944 -17.674  1.00 11.79           C  
+ATOM   2210  CA  VAL B 131      -3.563   9.907 -15.809  1.00 13.47           C  
+ATOM   2217  CA  GLY B 132      -7.236  10.907 -15.731  1.00 11.21           C  
+ATOM   2221  CA  VAL B 133      -7.410  10.848 -11.937  1.00 10.20           C  
+ATOM   2228  CA  SER B 134      -7.001  14.316 -10.419  1.00  9.26           C  
+ATOM   2234  CA  ARG B 135      -7.189  17.415 -12.632  1.00  9.27           C  
+ATOM   2245  CA  SER B 136      -9.776  16.039 -14.988  1.00 10.14           C  
+ATOM   2251  CA  ALA B 137     -11.877  14.441 -12.290  1.00 10.56           C  
+ATOM   2256  CA  THR B 138     -11.891  17.660 -10.266  1.00  9.98           C  
+ATOM   2263  CA  LEU B 139     -13.385  19.628 -13.144  1.00 10.16           C  
+ATOM   2271  CA  VAL B 140     -16.006  16.959 -13.689  1.00  9.13           C  
+ATOM   2278  CA  LEU B 141     -17.015  16.831 -10.038  1.00 10.20           C  
+ATOM   2286  CA  ALA B 142     -17.359  20.641 -10.069  1.00 11.24           C  
+ATOM   2291  CA  TYR B 143     -19.504  20.445 -13.220  1.00 11.18           C  
+ATOM   2303  CA  LEU B 144     -21.851  17.976 -11.580  1.00 11.49           C  
+ATOM   2311  CA  MET B 145     -22.166  20.170  -8.467  1.00 12.13           C  
+ATOM   2319  CA  LEU B 146     -22.729  23.388 -10.511  1.00 14.90           C  
+ATOM   2327  CA  HIS B 147     -25.063  22.085 -13.187  1.00 14.12           C  
+ATOM   2337  CA  GLN B 148     -26.566  18.750 -12.158  1.00 13.26           C  
+ATOM   2346  CA  ARG B 149     -27.597  19.731  -8.606  1.00 16.88           C  
+ATOM   2357  CA  LEU B 150     -25.355  17.174  -6.894  1.00 14.88           C  
+ATOM   2365  CA  SER B 151     -23.711  17.463  -3.540  1.00 12.81           C  
+ATOM   2371  CA  LEU B 152     -19.988  16.673  -3.455  1.00 13.31           C  
+ATOM   2379  CA  ARG B 153     -20.641  13.331  -1.893  1.00 14.47           C  
+ATOM   2390  CA  GLN B 154     -23.269  12.486  -4.520  1.00 13.63           C  
+ATOM   2399  CA  ALA B 155     -20.897  13.659  -7.265  1.00 11.71           C  
+ATOM   2404  CA  VAL B 156     -18.135  11.373  -5.989  1.00 13.30           C  
+ATOM   2411  CA  ILE B 157     -20.556   8.585  -5.600  1.00 14.72           C  
+ATOM   2419  CA  THR B 158     -21.631   9.096  -9.241  1.00 11.55           C  
+ATOM   2426  CA  VAL B 159     -18.224   9.243 -10.795  1.00 11.48           C  
+ATOM   2433  CA  ARG B 160     -16.502   6.530  -8.695  1.00 12.25           C  
+ATOM   2444  CA  GLN B 161     -18.799   3.811  -9.933  1.00 13.84           C  
+ATOM   2453  CA  HIS B 162     -17.373   4.225 -13.435  1.00 12.26           C  
+ATOM   2463  CA  ARG B 163     -13.737   5.306 -12.918  1.00 10.85           C  
+ATOM   2474  CA  TRP B 164     -11.178   5.267 -10.165  1.00 13.39           C  
+ATOM   2488  CA  VAL B 165     -10.440   8.941  -9.489  1.00 10.78           C  
+ATOM   2495  CA  PHE B 166      -8.526  10.596  -6.680  1.00 11.54           C  
+ATOM   2506  CA  PRO B 167      -8.174  14.348  -6.674  1.00 10.62           C  
+ATOM   2513  CA  ASN B 168      -5.161  15.613  -4.658  1.00 11.04           C  
+ATOM   2521  CA  ARG B 169      -5.980  16.928  -1.102  1.00 13.34           C  
+ATOM   2532  CA  GLY B 170      -5.731  20.605  -2.261  1.00 14.17           C  
+ATOM   2536  CA  PHE B 171      -8.295  19.927  -4.899  1.00 12.22           C  
+ATOM   2547  CA  LEU B 172     -10.462  18.029  -2.327  1.00 13.34           C  
+ATOM   2555  CA  HIS B 173     -10.364  21.110  -0.115  1.00 17.46           C  
+ATOM   2565  CA  GLN B 174     -11.308  23.290  -3.060  1.00 14.75           C  
+ATOM   2574  CA  LEU B 175     -14.273  21.047  -3.993  1.00 11.27           C  
+ATOM   2582  CA  ALA B 176     -15.436  20.881  -0.332  1.00 14.59           C  
+ATOM   2587  CA  ARG B 177     -15.386  24.700  -0.312  1.00 16.74           C  
+ATOM   2598  CA  LEU B 178     -17.560  24.705  -3.409  1.00 16.43           C  
+ATOM   2606  CA  ASP B 179     -19.915  22.224  -1.748  1.00 19.14           C  
+ATOM   2614  CA  GLN B 180     -20.191  24.580   1.242  1.00 25.10           C  
+ATOM   2623  CA  GLN B 181     -20.906  27.587  -0.994  1.00 26.82           C  
+ATOM   2632  CA  LEU B 182     -23.492  25.850  -3.149  1.00 21.70           C  
+ATOM   2640  CA  ARG B 183     -25.458  24.130  -0.306  1.00 24.33           C  
+ATOM   2651  CA  GLY B 184     -25.076  26.614   2.582  1.00 37.43           C  
+ATOM   2655  CA  ALA B 185     -22.715  24.156   4.375  1.00 43.78           C  
+END

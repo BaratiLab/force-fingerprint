@@ -1,0 +1,130 @@
+HEADER    TRANSPORT                               03-JAN-06   2CB8              
+TITLE     HIGH RESOLUTION CRYSTAL STRUCTURE OF LIGANDED HUMAN L-ACBP            
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: ACYL-COA-BINDING PROTEIN;                                  
+COMPND   3 CHAIN: A, B;                                                         
+COMPND   4 SYNONYM: ACYL-COENZYME A BINDING PROTEIN, ACBP, DIAZEPAM-BINDING     
+COMPND   5 INHIBITOR, DBI, ENDOZEPINE, EP;                                      
+COMPND   6 ENGINEERED: YES                                                      
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   
+SOURCE   3 ORGANISM_COMMON: HUMAN;                                              
+SOURCE   4 ORGANISM_TAXID: 9606;                                                
+SOURCE   5 EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 
+SOURCE   6 EXPRESSION_SYSTEM_TAXID: 562                                         
+KEYWDS    ACYL-COENZYME A BINDING PROTEIN, FATTY ACID, ACETYLATION, ALTERNATIVE 
+KEYWDS   2 SPLICING, LIPID-BINDING, TRANSPORT                                   
+EXPDTA    X-RAY DIFFRACTION                                                     
+AUTHOR    J.P.TASKINEN,D.M.VAN AALTEN,J.KNUDSEN,R.K.WIERENGA                    
+REVDAT   4   08-MAY-24 2CB8    1       REMARK LINK                              
+REVDAT   3   24-FEB-09 2CB8    1       VERSN                                    
+REVDAT   2   20-DEC-06 2CB8    1       JRNL                                     
+REVDAT   1   25-OCT-06 2CB8    0                                                
+JRNL        AUTH   J.P.TASKINEN,D.M.VAN AALTEN,J.KNUDSEN,R.K.WIERENGA           
+JRNL        TITL   HIGH RESOLUTION CRYSTAL STRUCTURES OF UNLIGANDED AND         
+JRNL        TITL 2 LIGANDED HUMAN LIVER ACBP REVEAL A NEW MODE OF BINDING FOR   
+JRNL        TITL 3 THE ACYL-COA LIGAND.                                         
+JRNL        REF    PROTEINS: STRUCT., FUNCT.,    V.  66   229 2007              
+JRNL        REF  2 BIOINF.                                                      
+JRNL        REFN                   ISSN 0887-3585                               
+JRNL        PMID   17044054                                                     
+JRNL        DOI    10.1002/PROT.21124                                           
+REMARK   2                                                                      
+REMARK   2 RESOLUTION.    1.40 ANGSTROMS.                                       
+REMARK   3                                                                      
+REMARK   3 REFINEMENT.                                                          
+REMARK   3   PROGRAM     : REFMAC 5.1.24                                        
+REMARK   3   AUTHORS     : MURSHUDOV,SKUBAK,LEBEDEV,PANNU,STEINER,              
+REMARK   3               : NICHOLLS,WINN,LONG,VAGIN                             
+REMARK   3                                                                      
+REMARK   3    REFINEMENT TARGET : MAXIMUM LIKELIHOOD                            
+REMARK   3                                                                      
+REMARK   3  DATA USED IN REFINEMENT.                                            
+REMARK   3   RESOLUTION RANGE HIGH (ANGSTROMS) : 1.40                           
+ATOM      2  CA  SER A   2      32.598   7.844  44.729  1.00 16.40           C  
+ATOM      8  CA  GLN A   3      34.445  10.752  43.135  1.00 14.14           C  
+ATOM     17  CA  ALA A   4      35.176   8.574  40.071  1.00 14.91           C  
+ATOM     22  CA  GLU A   5      31.463   7.759  39.724  1.00 12.29           C  
+ATOM     31  CA  PHE A   6      30.638  11.457  40.144  1.00 10.81           C  
+ATOM     42  CA  GLU A   7      32.991  12.187  37.229  1.00 12.29           C  
+ATOM     51  CA  LYS A   8      31.269   9.523  35.133  1.00 11.58           C  
+ATOM     65  CA  ALA A   9      27.756  10.831  35.987  1.00 11.93           C  
+ATOM     70  CA  ALA A  10      28.820  14.388  35.125  1.00 11.55           C  
+ATOM     75  CA  GLU A  11      29.903  13.075  31.707  1.00 11.22           C  
+ATOM     84  CA  GLU A  12      26.833  10.907  31.060  1.00 12.16           C  
+ATOM     93  CA  VAL A  13      24.353  13.684  31.865  1.00 12.03           C  
+ATOM    100  CA  ARG A  14      25.698  15.613  28.818  1.00 11.54           C  
+ATOM    118  CA  HIS A  15      24.673  12.797  26.453  1.00 11.88           C  
+ATOM    128  CA  LEU A  16      21.015  12.267  27.321  1.00 14.41           C  
+ATOM    136  CA  LYS A  17      18.834  11.826  24.224  1.00 17.11           C  
+ATOM    145  CA  THR A  18      16.615  14.700  25.432  1.00 17.12           C  
+ATOM    152  CA  LYS A  19      17.788  17.797  27.313  1.00 17.07           C  
+ATOM    166  CA  PRO A  20      16.660  17.574  30.960  1.00 16.28           C  
+ATOM    173  CA  SER A  21      13.851  19.821  32.187  1.00 12.13           C  
+ATOM    179  CA  ASP A  22      14.681  23.068  33.948  1.00 11.64           C  
+ATOM    187  CA  GLU A  23      13.917  21.459  37.295  1.00 11.57           C  
+ATOM    196  CA  GLU A  24      16.322  18.607  36.477  1.00 11.12           C  
+ATOM    205  CA  MET A  25      19.021  21.029  35.250  1.00 12.83           C  
+ATOM    217  CA  LEU A  26      18.780  23.061  38.456  1.00 12.48           C  
+ATOM    225  CA  PHE A  27      18.954  19.916  40.614  1.00 11.77           C  
+ATOM    236  CA  ILE A  28      22.065  18.826  38.693  1.00 13.06           C  
+ATOM    244  CA  TYR A  29      23.677  22.262  38.959  1.00 12.13           C  
+ATOM    256  CA  GLY A  30      22.971  22.814  42.656  1.00 12.59           C  
+ATOM    260  CA  HIS A  31      24.169  19.373  43.701  1.00 11.51           C  
+ATOM    270  CA  TYR A  32      27.278  19.671  41.530  1.00 13.03           C  
+ATOM    282  CA  LYS A  33      28.233  22.905  43.305  1.00 12.95           C  
+ATOM    291  CA  GLN A  34      27.473  21.456  46.732  1.00 12.34           C  
+ATOM    300  CA  ALA A  35      29.590  18.343  45.954  1.00 14.49           C  
+ATOM    305  CA  THR A  36      32.548  20.393  44.717  1.00 15.83           C  
+ATOM    312  CA  VAL A  37      32.737  23.767  46.439  1.00 16.09           C  
+ATOM    319  CA  GLY A  38      30.496  22.796  49.358  1.00 14.96           C  
+ATOM    323  CA  ASP A  39      28.415  25.481  51.068  1.00 14.12           C  
+ATOM    331  CA  ILE A  40      27.636  28.421  48.814  1.00 13.44           C  
+ATOM    339  CA  ASN A  41      30.246  31.177  49.107  1.00 14.91           C  
+ATOM    347  CA  THR A  42      29.059  33.747  46.561  1.00 14.85           C  
+ATOM    354  CA  GLU A  43      26.579  36.631  46.677  1.00 14.63           C  
+ATOM    363  CA  ARG A  44      23.274  36.176  44.879  1.00 12.72           C  
+ATOM    374  CA  PRO A  45      23.149  37.732  41.380  1.00 14.74           C  
+ATOM    381  CA  GLY A  46      20.853  40.695  40.854  1.00 15.41           C  
+ATOM    385  CA  MET A  47      17.173  40.369  40.055  1.00 15.21           C  
+ATOM    395  CA  LEU A  48      17.709  40.661  36.292  1.00 13.74           C  
+ATOM    403  CA  ASP A  49      20.313  37.887  36.107  1.00 12.49           C  
+ATOM    411  CA  PHE A  50      17.585  35.346  35.551  1.00 13.17           C  
+ATOM    422  CA  THR A  51      19.635  32.229  34.956  1.00 13.89           C  
+ATOM    429  CA  GLY A  52      22.224  33.335  37.498  1.00 13.80           C  
+ATOM    433  CA  LYS A  53      19.761  33.855  40.358  1.00 12.25           C  
+ATOM    447  CA  ALA A  54      17.945  30.562  39.608  1.00 12.88           C  
+ATOM    452  CA  LYS A  55      21.283  28.708  39.684  1.00 13.50           C  
+ATOM    463  CA  TRP A  56      22.315  30.476  42.877  1.00 11.15           C  
+ATOM    477  CA  ASP A  57      19.014  29.618  44.577  1.00 11.66           C  
+ATOM    485  CA  ALA A  58      19.343  25.934  43.628  1.00 12.41           C  
+ATOM    490  CA  TRP A  59      22.781  25.793  45.292  1.00 10.93           C  
+ATOM    504  CA  ASN A  60      21.832  27.992  48.252  1.00 11.28           C  
+ATOM    512  CA  GLU A  61      18.960  25.646  49.154  1.00 13.33           C  
+ATOM    521  CA  LEU A  62      21.510  22.899  49.837  1.00 12.44           C  
+ATOM    529  CA  LYS A  63      23.537  24.809  52.454  1.00 14.56           C  
+ATOM    538  CA  GLY A  64      24.666  22.416  55.229  1.00 15.96           C  
+ATOM    542  CA  THR A  65      24.548  19.338  52.988  1.00 14.07           C  
+ATOM    549  CA  SER A  66      27.687  17.211  53.055  1.00 12.53           C  
+ATOM    557  CA  LYS A  67      29.683  16.984  49.853  1.00 14.44           C  
+ATOM    566  CA  GLU A  68      29.240  13.185  50.038  1.00 15.66           C  
+ATOM    575  CA  ASP A  69      25.433  13.449  50.103  1.00 13.75           C  
+ATOM    583  CA  ALA A  70      25.334  15.991  47.312  1.00 12.65           C  
+ATOM    588  CA  MET A  71      27.526  13.709  45.233  1.00 13.63           C  
+ATOM    600  CA  LYS A  72      25.322  10.643  45.938  1.00 14.54           C  
+ATOM    609  CA  ALA A  73      22.198  12.636  45.005  1.00 13.76           C  
+ATOM    614  CA  TYR A  74      23.844  13.890  41.774  1.00 13.24           C  
+ATOM    626  CA  ILE A  75      24.841  10.392  40.694  1.00 13.25           C  
+ATOM    634  CA  ASN A  76      21.402   9.015  41.518  1.00 14.82           C  
+ATOM    646  CA  LYS A  77      19.713  11.813  39.588  1.00 13.77           C  
+ATOM    655  CA  VAL A  78      21.810  11.081  36.501  1.00 11.81           C  
+ATOM    662  CA  GLU A  79      20.850   7.404  36.728  1.00 16.22           C  
+ATOM    671  CA  GLU A  80      17.182   8.485  36.930  1.00 15.62           C  
+ATOM    680  CA  LEU A  81      17.628  10.749  33.888  1.00 13.65           C  
+ATOM    688  CA  LYS A  82      19.338   7.991  31.886  1.00 15.09           C  
+ATOM    697  CA  LYS A  83      16.288   5.774  32.500  1.00 16.72           C  
+ATOM    706  CA  LYS A  84      13.885   8.611  31.644  1.00 15.54           C  
+ATOM    715  CA  TYR A  85      15.460   9.920  28.427  1.00 15.83           C  
+ATOM    727  CA  GLY A  86      17.916   7.280  27.282  1.00 19.28           C  
+ATOM    731  CA  ILE A  87      21.553   7.631  26.339  1.00 26.15           C  
+END

@@ -1,0 +1,148 @@
+HEADER    LIGASE                                  10-DEC-09   3L11              
+TITLE     CRYSTAL STRUCTURE OF THE RING DOMAIN OF RNF168                        
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: E3 UBIQUITIN-PROTEIN LIGASE RNF168;                        
+COMPND   3 CHAIN: A;                                                            
+COMPND   4 FRAGMENT: RING DOMAIN (UNP RESIDUES 1-113);                          
+COMPND   5 SYNONYM: RING FINGER PROTEIN 168;                                    
+COMPND   6 EC: 6.3.2.-;                                                         
+COMPND   7 ENGINEERED: YES                                                      
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   
+SOURCE   3 ORGANISM_COMMON: HUMAN;                                              
+SOURCE   4 ORGANISM_TAXID: 9606;                                                
+SOURCE   5 GENE: BC033791, RNF168;                                              
+SOURCE   6 EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 
+SOURCE   7 EXPRESSION_SYSTEM_TAXID: 469008;                                     
+SOURCE   8 EXPRESSION_SYSTEM_STRAIN: BL21(DE3);                                 
+SOURCE   9 EXPRESSION_SYSTEM_VECTOR_TYPE: PLASMID;                              
+SOURCE  10 EXPRESSION_SYSTEM_PLASMID: PET28                                     
+KEYWDS    E3 LIGASE, RING DOMAIN, DNA DAMAGE, CHROMATIN REGULATOR, CHROMOSOMAL  
+KEYWDS   2 PROTEIN, DNA REPAIR, LIGASE, METAL-BINDING, NUCLEUS, PHOSPHOPROTEIN, 
+KEYWDS   3 UBL CONJUGATION PATHWAY, ZINC-FINGER, STRUCTURAL GENOMICS,           
+KEYWDS   4 STRUCTURAL GENOMICS CONSORTIUM, SGC                                  
+EXPDTA    X-RAY DIFFRACTION                                                     
+AUTHOR    D.NECULAI,L.YERMEKBAYEVA,L.CROMBET,J.WEIGELT,C.BOUNTRA,A.M.EDWARDS,   
+AUTHOR   2 C.H.ARROWSMITH,A.BOCHKAREV,S.DHE-PAGANON,STRUCTURAL GENOMICS         
+AUTHOR   3 CONSORTIUM (SGC)                                                     
+REVDAT   4   06-SEP-23 3L11    1       REMARK SEQADV LINK                       
+REVDAT   3   26-SEP-12 3L11    1       JRNL   VERSN                             
+REVDAT   2   16-FEB-10 3L11    1       AUTHOR                                   
+REVDAT   1   19-JAN-10 3L11    0                                                
+JRNL        AUTH   S.J.CAMPBELL,R.A.EDWARDS,C.C.LEUNG,D.NECULAI,C.D.HODGE,      
+JRNL        AUTH 2 S.DHE-PAGANON,J.N.GLOVER                                     
+JRNL        TITL   MOLECULAR INSIGHTS INTO THE FUNCTION OF RING FINGER          
+JRNL        TITL 2 (RNF)-CONTAINING PROTEINS HRNF8 AND HRNF168 IN               
+JRNL        TITL 3 UBC13/MMS2-DEPENDENT UBIQUITYLATION.                         
+JRNL        REF    J.BIOL.CHEM.                  V. 287 23900 2012              
+JRNL        REFN                   ISSN 0021-9258                               
+JRNL        PMID   22589545                                                     
+JRNL        DOI    10.1074/JBC.M112.359653                                      
+REMARK   2                                                                      
+REMARK   2 RESOLUTION.    2.12 ANGSTROMS.                                       
+REMARK   3                                                                      
+ATOM      2  CA  SER A   0       3.034  10.515  10.227  1.00 49.25           C  
+ATOM      8  CA  MET A   1      -0.507  11.601   9.131  1.00 46.64           C  
+ATOM     16  CA  ALA A   2      -3.056  14.444   9.497  1.00 38.06           C  
+ATOM     21  CA  LEU A   3      -4.468  14.851  13.009  1.00 34.70           C  
+ATOM     29  CA  PRO A   4      -8.266  14.462  12.663  1.00 33.67           C  
+ATOM     36  CA  LYS A   5     -10.235  17.664  13.526  1.00 41.68           C  
+ATOM     45  CA  ASP A   6     -10.384  18.285  17.320  1.00 40.83           C  
+ATOM     53  CA  ALA A   7      -8.394  15.103  18.024  1.00 30.38           C  
+ATOM     58  CA  ILE A   8      -5.993  15.112  20.977  1.00 26.55           C  
+ATOM     66  CA  PRO A   9      -2.503  14.340  19.596  1.00 25.22           C  
+ATOM     73  CA  SER A  10      -0.252  11.852  21.442  1.00 29.72           C  
+ATOM     79  CA  LEU A  11       2.618  13.360  23.416  1.00 30.74           C  
+ATOM     87  CA  SER A  12       5.012  11.398  21.321  1.00 31.64           C  
+ATOM     93  CA  GLU A  13       3.782  13.093  18.111  1.00 30.07           C  
+ATOM    102  CA  CYS A  14       4.293  16.458  19.875  1.00 26.78           C  
+ATOM    108  CA  GLN A  15       7.936  15.779  20.825  1.00 27.30           C  
+ATOM    117  CA  CYS A  16      10.775  17.107  18.710  1.00 26.17           C  
+ATOM    123  CA  GLY A  17      12.351  14.045  16.958  1.00 26.66           C  
+ATOM    127  CA  ILE A  18      15.753  15.560  17.401  1.00 29.40           C  
+ATOM    135  CA  CYS A  19      15.959  16.469  21.037  1.00 30.84           C  
+ATOM    141  CA  MET A  20      12.867  14.560  22.406  1.00 32.29           C  
+ATOM    149  CA  GLU A  21      11.614  17.675  24.268  1.00 30.28           C  
+ATOM    158  CA  ILE A  22       8.037  18.899  23.592  1.00 26.05           C  
+ATOM    166  CA  LEU A  23       8.082  20.780  20.255  1.00 29.40           C  
+ATOM    174  CA  VAL A  24       8.423  24.528  20.950  1.00 30.46           C  
+ATOM    181  CA  GLU A  25       7.800  27.051  18.076  1.00 28.15           C  
+ATOM    190  CA  PRO A  26       7.805  24.083  15.698  1.00 24.96           C  
+ATOM    197  CA  VAL A  27       9.454  24.624  12.281  1.00 23.01           C  
+ATOM    204  CA  THR A  28       8.057  22.420   9.493  1.00 22.45           C  
+ATOM    211  CA  LEU A  29      10.433  22.109   6.576  1.00 21.46           C  
+ATOM    219  CA  PRO A  30       8.963  21.932   3.113  1.00 22.98           C  
+ATOM    226  CA  CYS A  31       9.587  18.168   3.033  1.00 23.94           C  
+ATOM    232  CA  ASN A  32       7.029  18.098   5.949  1.00 27.56           C  
+ATOM    240  CA  HIS A  33       9.499  17.164   8.637  1.00 26.39           C  
+ATOM    250  CA  THR A  34       9.204  19.174  11.787  1.00 24.53           C  
+ATOM    257  CA  LEU A  35      11.623  20.074  14.536  1.00 23.93           C  
+ATOM    265  CA  CYS A  36      11.580  22.587  17.438  1.00 24.46           C  
+ATOM    271  CA  LYS A  37      12.928  26.082  16.713  1.00 28.81           C  
+ATOM    280  CA  PRO A  38      15.955  25.612  19.014  1.00 30.74           C  
+ATOM    287  CA  CYS A  39      16.856  22.401  17.106  1.00 28.48           C  
+ATOM    293  CA  PHE A  40      16.306  24.122  13.778  1.00 29.39           C  
+ATOM    304  CA  GLN A  41      18.754  26.846  14.773  1.00 35.73           C  
+ATOM    313  CA  SER A  42      21.390  24.253  15.826  1.00 38.42           C  
+ATOM    319  CA  THR A  43      21.045  21.389  13.462  1.00 35.16           C  
+ATOM    326  CA  VAL A  44      19.919  23.358  10.400  1.00 32.15           C  
+ATOM    333  CA  GLU A  45      20.258  27.142  10.332  1.00 40.52           C  
+ATOM    342  CA  LYS A  46      23.694  27.120  11.918  1.00 49.49           C  
+ATOM    351  CA  ALA A  47      24.850  23.788  10.313  1.00 45.64           C  
+ATOM    356  CA  SER A  48      24.384  22.699   6.746  1.00 43.80           C  
+ATOM    362  CA  LEU A  49      20.865  23.944   5.973  1.00 33.47           C  
+ATOM    370  CA  CYS A  50      19.425  20.460   5.078  1.00 27.58           C  
+ATOM    376  CA  CYS A  51      16.498  18.747   6.744  1.00 23.96           C  
+ATOM    382  CA  PRO A  52      18.037  16.564   9.457  1.00 25.74           C  
+ATOM    389  CA  PHE A  53      15.503  13.806   8.600  1.00 24.88           C  
+ATOM    400  CA  CYS A  54      15.784  13.533   4.826  1.00 24.77           C  
+ATOM    406  CA  ARG A  55      18.646  15.857   3.831  1.00 23.82           C  
+ATOM    417  CA  ARG A  56      16.386  17.967   1.689  1.00 24.70           C  
+ATOM    429  CA AARG A  57      18.242  21.312   0.964  0.50 25.82           C  
+ATOM    450  CA  VAL A  58      16.521  24.146   2.813  1.00 24.81           C  
+ATOM    457  CA  SER A  59      18.842  27.194   2.386  1.00 29.21           C  
+ATOM    463  CA  SER A  60      16.525  29.202   0.082  1.00 31.09           C  
+ATOM    469  CA  TRP A  61      13.523  28.098   2.085  1.00 25.33           C  
+ATOM    483  CA  THR A  62      15.327  29.374   5.228  1.00 26.95           C  
+ATOM    490  CA  ARG A  63      16.229  32.775   3.681  1.00 32.17           C  
+ATOM    501  CA  TYR A  64      12.672  33.119   2.371  1.00 30.68           C  
+ATOM    513  CA  HIS A  65      10.981  32.615   5.699  1.00 29.87           C  
+ATOM    523  CA  THR A  66      13.589  34.245   7.931  1.00 32.21           C  
+ATOM    530  CA  ARG A  67      12.970  37.375   5.868  1.00 37.66           C  
+ATOM    541  CA  ARG A  68       9.245  37.062   6.268  1.00 34.18           C  
+ATOM    552  CA  ASN A  69       9.532  35.933   9.889  1.00 34.81           C  
+ATOM    560  CA  SER A  70       7.460  32.895   9.057  1.00 29.64           C  
+ATOM    566  CA  LEU A  71       9.681  30.004  10.093  1.00 29.50           C  
+ATOM    574  CA  VAL A  72       7.230  28.706  12.739  1.00 28.09           C  
+ATOM    581  CA  ASN A  73       4.395  26.501  11.662  1.00 26.50           C  
+ATOM    589  CA  VAL A  74       1.737  28.554  13.498  1.00 31.16           C  
+ATOM    596  CA  GLU A  75      -1.181  26.102  13.229  1.00 35.20           C  
+ATOM    605  CA  LEU A  76       0.885  23.258  14.550  1.00 27.87           C  
+ATOM    613  CA  TRP A  77       2.262  25.535  17.307  1.00 27.97           C  
+ATOM    627  CA  THR A  78      -1.313  26.441  18.220  1.00 30.56           C  
+ATOM    634  CA  ILE A  79      -2.235  22.761  18.579  1.00 28.67           C  
+ATOM    642  CA  ILE A  80       0.769  21.879  20.699  1.00 26.10           C  
+ATOM    650  CA  GLN A  81       0.136  24.689  23.224  1.00 29.24           C  
+ATOM    659  CA  LYS A  82      -3.565  23.806  23.310  1.00 30.10           C  
+ATOM    668  CA  HIS A  83      -3.016  20.171  24.205  1.00 26.66           C  
+ATOM    678  CA  TYR A  84       0.289  20.186  26.076  1.00 25.05           C  
+ATOM    690  CA  PRO A  85       0.341  23.660  27.599  1.00 26.75           C  
+ATOM    697  CA  ARG A  86       2.176  22.660  30.754  1.00 28.64           C  
+ATOM    708  CA  GLU A  87       4.830  20.896  28.761  1.00 27.96           C  
+ATOM    717  CA  CYS A  88       5.285  24.065  26.690  1.00 30.98           C  
+ATOM    723  CA  LYS A  89       5.638  26.106  29.950  1.00 35.75           C  
+ATOM    732  CA  LEU A  90       8.142  23.762  31.516  1.00 34.81           C  
+ATOM    740  CA  ARG A  91      10.251  24.033  28.405  1.00 37.27           C  
+ATOM    751  CA  ALA A  92       9.986  27.833  28.216  1.00 43.63           C  
+ATOM    756  CA  SER A  93      11.477  27.643  31.816  1.00 55.65           C  
+ATOM    762  CA  GLY A  94      14.555  25.590  30.583  1.00 62.99           C  
+ATOM    766  CA  TYR A 104      22.310   4.854  25.119  1.00 62.38           C  
+ATOM    778  CA  GLN A 105      22.939   5.636  21.424  1.00 54.85           C  
+ATOM    787  CA  PRO A 106      24.908   3.238  19.099  1.00 50.29           C  
+ATOM    794  CA  VAL A 107      24.118   5.429  16.049  1.00 42.95           C  
+ATOM    801  CA  ARG A 108      25.481   8.995  16.433  1.00 43.72           C  
+ATOM    812  CA  LEU A 109      25.052  10.333  12.880  1.00 39.16           C  
+ATOM    820  CA  LEU A 110      23.433  13.796  13.335  1.00 41.80           C  
+ATOM    828  CA  SER A 111      25.828  16.738  13.449  1.00 50.13           C  
+ATOM    834  CA  LYS A 112      25.694  19.024  16.628  1.00 63.77           C  
+END

@@ -1,0 +1,118 @@
+HEADER    TRANSCRIPTION/DNA                       22-JUL-15   5CQQ              
+TITLE     CRYSTAL STRUCTURE OF THE DROSOPHILA ZESTE DNA BINDING DOMAIN IN       
+TITLE    2 COMPLEX WITH DNA                                                     
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: REGULATORY PROTEIN ZESTE;                                  
+COMPND   3 CHAIN: A, B;                                                         
+COMPND   4 FRAGMENT: UNP RESIDUES 51-130;                                       
+COMPND   5 ENGINEERED: YES;                                                     
+COMPND   6 MOL_ID: 2;                                                           
+COMPND   7 MOLECULE: DNA (5'-                                                   
+COMPND   8 D(*CP*TP*GP*TP*TP*TP*TP*CP*CP*AP*CP*TP*CP*GP*TP*TP*TP*TP*T)-3');     
+COMPND   9 CHAIN: C, E;                                                         
+COMPND  10 ENGINEERED: YES;                                                     
+COMPND  11 MOL_ID: 3;                                                           
+COMPND  12 MOLECULE: DNA (5'-                                                   
+COMPND  13 D(*AP*AP*AP*AP*AP*CP*GP*AP*GP*TP*GP*GP*AP*AP*AP*AP*CP*AP*G)-3');     
+COMPND  14 CHAIN: D, F;                                                         
+COMPND  15 ENGINEERED: YES                                                      
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 ORGANISM_SCIENTIFIC: DROSOPHILA MELANOGASTER;                        
+SOURCE   3 ORGANISM_COMMON: FRUIT FLY;                                          
+SOURCE   4 ORGANISM_TAXID: 7227;                                                
+SOURCE   5 GENE: Z, CG7803;                                                     
+SOURCE   6 EXPRESSION_SYSTEM: ESCHERICHIA COLI BL21(DE3);                       
+SOURCE   7 EXPRESSION_SYSTEM_TAXID: 469008;                                     
+SOURCE   8 EXPRESSION_SYSTEM_STRAIN: BL21(DE3);                                 
+SOURCE   9 EXPRESSION_SYSTEM_VECTOR_TYPE: PLASMID;                              
+SOURCE  10 EXPRESSION_SYSTEM_PLASMID: PGEX-4T-1;                                
+SOURCE  11 MOL_ID: 2;                                                           
+SOURCE  12 SYNTHETIC: YES;                                                      
+SOURCE  13 ORGANISM_SCIENTIFIC: DROSOPHILA MELANOGASTER;                        
+SOURCE  14 ORGANISM_TAXID: 7227;                                                
+SOURCE  15 MOL_ID: 3;                                                           
+SOURCE  16 SYNTHETIC: YES;                                                      
+SOURCE  17 ORGANISM_SCIENTIFIC: DROSOPHILA MELANOGASTER;                        
+SOURCE  18 ORGANISM_TAXID: 7227                                                 
+KEYWDS    COMPLEX, PROTEIN-DNA INTERACTION, TANSCRIPTION FACTOR, GENE           
+KEYWDS   2 REGULATION, TRANSCRIPTION-DNA COMPLEX                                
+EXPDTA    X-RAY DIFFRACTION                                                     
+AUTHOR    G.N.GAO,M.WANG,N.YANG,Y.HUANG,R.M.XU                                  
+REVDAT   4   20-MAR-24 5CQQ    1       REMARK                                   
+REVDAT   3   18-OCT-17 5CQQ    1       JRNL   REMARK                            
+REVDAT   2   09-DEC-15 5CQQ    1       JRNL                                     
+ATOM      2  CA  LEU A  52      34.196  33.982  62.816  1.00109.23           C  
+ATOM     10  CA  THR A  53      31.935  34.798  65.796  1.00108.85           C  
+ATOM     17  CA  PRO A  54      28.178  35.097  65.194  1.00 99.15           C  
+ATOM     24  CA  ARG A  55      25.909  37.945  66.138  1.00 87.80           C  
+ATOM     35  CA  PHE A  56      23.313  38.273  68.828  1.00 86.47           C  
+ATOM     46  CA  THR A  57      19.869  37.075  67.787  1.00 87.35           C  
+ATOM     53  CA  ALA A  58      16.816  39.167  68.650  1.00 96.51           C  
+ATOM     58  CA  GLU A  59      15.662  36.690  71.273  1.00103.40           C  
+ATOM     67  CA  GLU A  60      19.151  36.681  72.795  1.00 92.85           C  
+ATOM     76  CA  LYS A  61      19.160  40.469  72.907  1.00 89.19           C  
+ATOM     85  CA  GLU A  62      15.870  40.353  74.789  1.00 99.15           C  
+ATOM     94  CA  VAL A  63      17.329  37.821  77.217  1.00 88.39           C  
+ATOM    101  CA  LEU A  64      20.430  39.885  77.930  1.00 89.38           C  
+ATOM    109  CA  TYR A  65      18.352  43.045  78.247  1.00 92.89           C  
+ATOM    121  CA  THR A  66      16.112  41.274  80.757  1.00 93.62           C  
+ATOM    128  CA  LEU A  67      19.067  40.038  82.815  1.00 89.04           C  
+ATOM    136  CA  PHE A  68      20.593  43.516  82.734  1.00 87.73           C  
+ATOM    147  CA  HIS A  69      17.386  45.180  83.911  1.00 97.93           C  
+ATOM    157  CA  LEU A  70      17.257  42.665  86.741  1.00 90.07           C  
+ATOM    165  CA  HIS A  71      20.810  43.234  88.015  1.00 85.16           C  
+ATOM    175  CA  GLU A  72      20.815  47.005  87.444  1.00 93.31           C  
+ATOM    184  CA  GLU A  73      21.786  47.819  91.019  1.00 93.28           C  
+ATOM    193  CA  VAL A  74      25.087  45.912  90.749  1.00 86.19           C  
+ATOM    200  CA  ILE A  75      26.532  46.498  87.261  1.00 86.34           C  
+ATOM    208  CA  ASP A  76      25.425  50.095  86.629  1.00 91.02           C  
+ATOM    216  CA  ILE A  77      27.468  52.915  88.157  1.00 92.51           C  
+ATOM    224  CA  LYS A  78      24.374  55.127  88.038  1.00 96.05           C  
+ATOM    233  CA  HIS A  79      22.629  52.799  90.519  1.00 98.26           C  
+ATOM    243  CA  ARG A  80      25.546  51.805  92.751  1.00 93.96           C  
+ATOM    254  CA  LYS A  81      25.572  55.350  94.123  1.00109.68           C  
+ATOM    263  CA  TYR A  87      29.258  42.785  96.839  1.00103.27           C  
+ATOM    275  CA  SER A  88      31.060  41.083  93.937  1.00 84.57           C  
+ATOM    281  CA  VAL A  89      30.603  42.745  90.565  1.00 76.46           C  
+ATOM    288  CA  ARG A  90      32.654  40.051  88.812  1.00 70.75           C  
+ATOM    299  CA  GLU A  91      30.480  37.321  90.344  1.00 81.07           C  
+ATOM    308  CA  THR A  92      27.306  39.098  89.276  1.00 80.74           C  
+ATOM    315  CA  TRP A  93      28.563  39.329  85.716  1.00 75.94           C  
+ATOM    329  CA  ASP A  94      29.582  35.678  85.914  1.00 74.62           C  
+ATOM    337  CA  LYS A  95      26.045  34.897  87.073  1.00 79.10           C  
+ATOM    346  CA  ILE A  96      24.635  36.706  84.035  1.00 73.30           C  
+ATOM    354  CA  VAL A  97      27.049  34.994  81.633  1.00 73.22           C  
+ATOM    361  CA  LYS A  98      26.127  31.624  83.134  1.00 80.05           C  
+ATOM    370  CA  ASP A  99      22.382  32.187  82.904  1.00 82.42           C  
+ATOM    378  CA  PHE A 100      22.813  33.286  79.281  1.00 88.75           C  
+ATOM    389  CA  ASN A 101      25.018  30.394  78.158  1.00 87.19           C  
+ATOM    397  CA  SER A 102      22.611  27.994  79.880  1.00 87.26           C  
+ATOM    403  CA  HIS A 103      19.599  29.485  78.072  1.00102.76           C  
+ATOM    413  CA  PRO A 104      18.179  26.944  75.539  1.00113.31           C  
+ATOM    420  CA  HIS A 105      17.629  29.054  72.387  1.00116.08           C  
+ATOM    430  CA  VAL A 106      21.197  30.371  72.436  1.00108.06           C  
+ATOM    437  CA  SER A 107      23.174  30.659  69.205  1.00102.19           C  
+ATOM    443  CA  ALA A 108      26.746  30.650  70.522  1.00 93.01           C  
+ATOM    448  CA  MET A 109      28.590  30.547  73.844  1.00 83.61           C  
+ATOM    456  CA  ARG A 110      29.931  33.900  75.034  1.00 80.18           C  
+ATOM    467  CA  ASN A 111      32.480  34.898  77.631  1.00 70.75           C  
+ATOM    475  CA  ILE A 112      32.163  37.674  80.202  1.00 69.71           C  
+ATOM    483  CA  LYS A 113      33.996  40.135  77.989  1.00 65.80           C  
+ATOM    492  CA  GLN A 114      31.589  39.723  75.081  1.00 67.29           C  
+ATOM    501  CA  ILE A 115      28.561  40.108  77.328  1.00 66.81           C  
+ATOM    509  CA  GLN A 116      30.014  43.212  78.967  1.00 75.08           C  
+ATOM    518  CA  LYS A 117      30.809  44.611  75.539  1.00 72.24           C  
+ATOM    527  CA  PHE A 118      27.210  44.103  74.518  1.00 74.36           C  
+ATOM    538  CA  TRP A 119      26.169  45.973  77.667  1.00 80.87           C  
+ATOM    552  CA  LEU A 120      28.538  48.878  76.929  1.00 76.14           C  
+ATOM    560  CA  ASN A 121      27.587  49.086  73.232  1.00 79.23           C  
+ATOM    568  CA  SER A 122      23.824  48.716  73.742  1.00 85.05           C  
+ATOM    574  CA  ARG A 123      24.110  51.653  76.119  1.00 86.69           C  
+ATOM    585  CA  LEU A 124      26.368  53.671  73.800  1.00 80.21           C  
+ATOM    593  CA  ARG A 125      24.266  53.191  70.681  1.00 76.38           C  
+ATOM    604  CA  LYS A 126      21.241  53.891  72.864  1.00 86.98           C  
+ATOM    613  CA  GLN A 127      19.118  50.782  72.419  1.00 89.82           C  
+ATOM    622  CA  TYR A 128      19.074  49.650  76.048  1.00 95.64           C  
+ATOM    634  CA  PRO A 129      15.365  49.982  76.952  1.00108.94           C  
+ATOM    641  CA  TYR A 130      15.727  50.074  80.763  1.00104.00           C  
+END
