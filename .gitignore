@@ -53,3 +53,7 @@ bp_manifest_*.tsv
 cc_manifest_*.tsv
 *_manifest_from_data_dpfunc.tsv
 *.manifest.tsv
+
+# benchmark outputs
+benchmark_tables/
+filtered_mf_original/

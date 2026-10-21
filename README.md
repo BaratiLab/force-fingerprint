@@ -6,6 +6,8 @@ Curation and filtering pipeline for the [DPFunc](https://github.com/CSUBioGroup/
 
 Detailed biological criteria, mathematical formulations, and benchmark statistics are documented in [docs/DATASET_CURATION.md](docs/DATASET_CURATION.md).
 
+Benchmark tables for comparing models with DPFunc (full benchmark, filtered set with the original split, curated re-split): [docs/BENCHMARK.md](docs/BENCHMARK.md).
+
 ---
 
 ## Quickstart
