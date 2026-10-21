@@ -6,7 +6,7 @@ a sequence+structure model and DPFunc on the same proteins.
   full               every DPFunc benchmark protein that UniProt still knows, DPFunc's own split
   reduced_original   the filtered monomer set (dpfunc_filter.py without --resplit), DPFunc's own split
                      -> only 4 validation and 14 test proteins; expect very noisy scores
-  reduced_resplit    the filtered monomer set after --resplit 0.8 0.1 0.1 and ML-RUS (filtered_mf/)
+  reduced_resplit    the filtered monomer set after --resplit 0.8 0.1 0.1 and ML-RUS (data/curated_mf/)
 
 For every setting two files are written to --outdir:
   <name>.csv                 input for the sequence / structure models (see the plm-1d-prediction branch)
@@ -18,7 +18,7 @@ Inputs:
   --manifest          the DPFunc manifest (mf_manifest_from_data_dpfunc.tsv)
   --cache-dir         dpfunc_filter cache; its uniprot.tsv supplies the sequences
   --filtered-original output folder of   dpfunc_filter.py ... (no --resplit, no --undersample-frac)
-  --filtered-resplit  output folder of the curated, re-split run (filtered_mf)
+  --filtered-resplit  folder with the curated, re-split filtered_manifest.tsv (data/curated_mf in this repository)
   --structure-dir     optional folder(s) with structure files, e.g. DPFunc's DataProcess/AF2DB (<protein_id>.pdb);
                       the structures/ folder next to each filtered manifest is searched too. Proteins without a
                       file get an empty structure_file and are looked up by uniprot_id when the model runs
@@ -26,7 +26,7 @@ Inputs:
 Usage:
   python build_benchmark_tables.py \
       --manifest mf_manifest_from_data_dpfunc.tsv --cache-dir dpfunc_filter_cache \
-      --filtered-original filtered_mf_original --filtered-resplit filtered_mf \
+      --filtered-original filtered_mf_original --filtered-resplit data/curated_mf \
       --structure-dir /path/to/DPFunc/DataProcess/AF2DB --outdir benchmark_tables
 """
 import argparse
@@ -92,7 +92,7 @@ def main():
     ap.add_argument("--manifest", type=Path, required=True)
     ap.add_argument("--cache-dir", type=Path, default=Path("dpfunc_filter_cache"))
     ap.add_argument("--filtered-original", type=Path, required=True)
-    ap.add_argument("--filtered-resplit", type=Path, default=Path("filtered_mf"))
+    ap.add_argument("--filtered-resplit", type=Path, default=Path("data/curated_mf"))
     ap.add_argument("--structure-dir", type=Path, action="append", default=[],
                     help="folder with structure files (<protein_id>.pdb); repeat for several folders")
     ap.add_argument("--max-len", type=int, default=1000, help="longest sequence kept in every setting (ESM-2 reads at most 1022 residues)")
