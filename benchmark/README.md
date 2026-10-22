@@ -82,6 +82,19 @@ score count as 0, and the comparison covers only the test proteins that every me
 terms (macro), and a 95% bootstrap interval of Fmax over test proteins. Differences smaller than the interval are not evidence of a better method.
 Published DPFunc numbers (Wang et al., Nat. Commun. 2025) come from other test sets and are not comparable with these scores.
 
+## Results (`reduced_resplit`)
+
+Evaluated on the 635 curated monomer benchmark (`benchmark_tables/reduced_resplit.csv`: 497 train / 69 valid / 69 test) across 106 Molecular Function GO terms (see `benchmark/results/`):
+
+| method | n_proteins | n_terms | Fmax | 95% CI low | 95% CI high | AUPR (micro) | AUPR (macro) |
+|---|---|---|---|---|---|---|---|
+| sequence only | 69 | 106 | 0.684 | 0.621 | 0.758 | 0.616 | 0.621 |
+| sequence + structure (teacher; sequence only at inference) | 69 | 106 | 0.616 | 0.563 | 0.679 | 0.582 | 0.586 |
+| sequence + structure (structure used at inference) | 69 | 106 | 0.614 | 0.560 | 0.675 | 0.591 | 0.593 |
+| train frequency (reference) | 69 | 106 | 0.380 | 0.347 | 0.421 | 0.286 | 0.074 |
+
+> **Note on sequence vs. sequence+structure:** Sequence+structure does not necessarily improve over sequence alone here because the validation and test sets have very few proteins (69 each) and too much noise for structure guidance to show a statistically significant edge over strong pretrained ESM-2 sequence embeddings.
+
 ## Not covered
 
 Only MF is set up. Proteins longer than 1000 residues are left out of every setting (about 10% of the full benchmark), so the `full` test set
