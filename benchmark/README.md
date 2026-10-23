@@ -1,5 +1,7 @@
 # Benchmark: sequence model, sequence+structure model and DPFunc
 
+This is stage 1 of the project: show on DPFunc's own benchmark that a protein language model (with or without a structure teacher) is competitive with DPFunc. If it is, the same pipeline is run on the UIUC force fingerprints in place of the DPFunc data (stage 2, not run yet).
+
 Molecular-function (MF) prediction on three tables that are built on the `data` branch
 (`build_benchmark_tables.py`). Every method is trained on the same training proteins, tested on the same test
 proteins and scored by the same code (`score.py`).

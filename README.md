@@ -12,6 +12,10 @@ sequence *and* structure, and ships a model that **needs only a sequence at pred
  (teacher, frozen after its own training)          (structure knowledge is distilled into the sequence model)
 ```
 
+## Where this fits
+
+This code is a proof of concept in two stages. **Stage 1 (this branch):** take the DPFunc benchmark, replace DPFunc's method with a protein language model and a sequence+structure model, and benchmark them against DPFunc on the same proteins (`benchmark/`). **Stage 2 (proposal):** if that works, replace the DPFunc benchmark inputs with the one-dimensional force fingerprints from UIUC and repeat the same comparison. The force fingerprints replace the DPFunc data; they are not an extra input on top of it. The code can already read per-residue arrays (`--feature-files`, section 5) and has been tested on per-residue values derived from structures, but it has not been run on real force descriptors, which are not available yet.
+
 > **About the bundled demo:** `examples/demo_only_data/` holds a small demo table (section 2). It is for checking that the code runs, **not** a realistic use case - its targets (AlphaFold pLDDT, GO-derived labels) are not properties you would actually predict.
 
 ## The default behaviour, at a glance
