@@ -4,6 +4,8 @@ Curation and filtering pipeline for the [DPFunc](https://github.com/CSUBioGroup/
 
 > **Molecular Function (MF)** is the Gene Ontology (GO) domain describing elemental biochemical activities (e.g., catalytic activity, ligand binding) exerted by an individual gene product at the molecular level.
 
+Role in the project: this dataset is the benchmark on which a protein language model and a multimodal model are compared with DPFunc (stage 1). The proposal is then to replace the DPFunc data with the 1D force fingerprints from UIUC and run the same pipeline and comparison on them (stage 2).
+
 Detailed biological criteria, mathematical formulations, and benchmark statistics are documented in [docs/DATASET_CURATION.md](docs/DATASET_CURATION.md).
 
 Benchmark tables for comparing models with DPFunc (full benchmark, filtered set with the original split, curated re-split): [docs/BENCHMARK.md](docs/BENCHMARK.md).
