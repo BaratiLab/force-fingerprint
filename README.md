@@ -20,8 +20,16 @@ cd force-fingerprint
 pip install -r requirements.txt
 ```
 
+The full pipeline (Option B below) also needs:
+
+- **metapredict** (disorder prediction). Requires Python development headers (`Python.h`). If the build fails with `Python.h: No such file or directory`, use a Python that ships its headers, such as a conda/micromamba environment or a uv-managed Python (`uv python install 3.11`); no root access is needed for either.
+- **MMseqs2** (sequence-redundancy filtering), an external binary that must be on `PATH` or passed with `--mmseqs /path/to/mmseqs`:
+  ```bash
+  conda install -c bioconda mmseqs2
+  ```
+
 ### Option A: Use Pre-Curated Dataset
-The curated manifests, train/val/test splits, and loss weights are already tracked in `data/curated_mf/`. 
+The curated manifests, train/val/test splits, and loss weights from release v0.1.0 are tracked in `data/curated_mf/`. They were produced by an earlier version of the pipeline (strict monomers, length < 600, no disorder or redundancy filtering); see [Benchmark Curation Statistics](#benchmark-curation-statistics-v010-release).
 
 To download and unpack the matching 635 3D structures:
 ```bash
@@ -50,17 +58,40 @@ python dpfunc_filter.py \
   --download-structures
 ```
 
-All external UniProt and PDB queries are cached in `dpfunc_filter_cache/` for instant re-runs.
+With current defaults this also applies the disorder filter and MMseqs2 redundancy filtering, and keeps sequences shorter than 1,200 residues, so its output differs from the v0.1.0 dataset. Commonly adjusted options:
+
+| Option | Default | Effect |
+| :--- | :--- | :--- |
+| `--max-len` | `600` | Keep sequences with length < max-len. |
+| `--monomer-mode` | `strict` | `strict`, `lenient`, or `supported` (see below). All three are evaluated and recorded in `annotations.tsv` on every run. |
+| `--pdb-hetero-as-complex` | off | In `supported` mode, treat PDB assemblies with a real protein partner as complex evidence. |
+| `--max-disordered` | `10` | Drop proteins with an internal disordered run longer than this (`-1` disables). |
+| `--max-terminal-disordered` | `25` | Also cap the length of N-/C-terminal disordered tails (`-1` disables). |
+| `--disorder-threshold` | `0.5` | metapredict score above which a residue counts as disordered. |
+| `--min-seq-id` | `0.4` | MMseqs2 identity threshold for redundancy filtering (`0` disables). |
+| `--cluster-coverage` / `--cluster-cov-mode` | `0.8` / `0` | MMseqs2 alignment coverage requirement (`0` = both sequences). |
+| `--dedup-name-prefix` | off | Also keep at most one protein per UniProt entry-name prefix (e.g. `CATA_HUMAN` / `CATA_MOUSE`). |
+| `--skip-identity-verify` | off | Skip the all-against-all check that no two kept proteins exceed the identity threshold. |
+
+All external UniProt, PDB, AlphaFold, metapredict, and MMseqs2 results are cached in `dpfunc_filter_cache/` for fast re-runs. Changing the UniProt fields the script requests triggers a one-time re-download of the UniProt cache.
 
 ---
 
 ## Dataset: DPFunc Filter Criteria
 
-- **Monomers**: Single-chain monomers only (UniProt subunit annotations + RCSB PDB crystal symmetry). Drops oligomers and complexes.
+Applied in this order; every dropped protein is logged with a reason in `annotations.tsv`.
+
+- **UniProt mapping**: DPFunc IDs are mapped to current UniProtKB entries; obsolete or unmappable IDs are dropped.
+- **Length**: $30 \le \text{length} < 600$ (configurable with `--min-len` / `--max-len`).
 - **No membrane proteins**: Drops transmembrane, intramembrane, and lipid-anchored proteins.
-- **<600 residues**: Restricts sequence length to $30 \le \text{length} < 600$.
+- **Monomers**: Excludes oligomers and stable complex members, in one of three modes:
+  - `strict`: UniProt's subunit annotation says monomer and contains no oligomer or complex language.
+  - `lenient`: also accepts "monomer and homodimer"-style annotations.
+  - `supported`: drops proteins with positive evidence of a stable complex (UniProt text about the protein itself, Complex Portal membership, homo-oligomeric PDB assemblies), then keeps only proteins with monomer support, ranked in `monomer_tier` (1 = UniProt and PDB agree, 2 = UniProt only, 3 = PDB only).
+- **Disorder**: Drops proteins with an internal disordered region longer than 10 residues (metapredict per-residue scores > 0.5). Terminal tails are limited to 25 residues by default.
+- **Sequence redundancy**: Clusters with MMseqs2 (≥ 40% identity, 80% coverage) and keeps one protein per cluster, preferring human, mouse, yeast, then *E. coli*, reviewed entries, proteins with PDB structures, and longer sequences. A verification search then guarantees no two kept proteins exceed the threshold.
+- **Structures**: Audits experimental PDB structures vs. AlphaFold DB models and downloads coordinates.
 - **Manage class imbalance**: Prunes root GO terms, defines vocabulary strictly on train split ($\ge 10$ occurrences), applies ML-RUS, and generates `pos_weight` and `sample_weight`.
-- **Check structures available or not - PDB vs AlphaFold**: Audits experimental PDB structures vs. AlphaFold DB models and downloads coordinates.
 
 ---
 
@@ -69,7 +100,7 @@ All external UniProt and PDB queries are cached in `dpfunc_filter_cache/` for in
 ```text
 force-fingerprint/
 ├── data/
-│   └── curated_mf/             # Tracked in Git: curated manifest, loss weights, stats (~280 KB)
+│   └── curated_mf/             # Tracked in Git: v0.1.0 curated manifest, loss weights, stats (~280 KB)
 │       ├── filtered_manifest.tsv  # Curated manifest (635 proteins) with 80/10/10 split assignments
 │       ├── pos_weight.npy         # Precomputed 106-term BCE loss weights for PyTorch
 │       ├── term_stats.tsv         # Label counts, frequencies, and imbalance ratios per GO term
@@ -79,12 +110,12 @@ force-fingerprint/
 ├── filtered_mf/                # Local run output directory (structures unpack here)
 │   ├── structures/             # 635 downloaded 3D structures (.pdb and .cif files)
 │   └── structures_mf.tar.gz    # Compressed 82 MB archive (from release)
-└── dpfunc_filter_cache/        # Cached API responses (uniprot.tsv, rcsb, alphafold)
+└── dpfunc_filter_cache/        # Cached API responses (UniProt, RCSB, AlphaFold, metapredict, MMseqs2)
 ```
 
 ---
 
-## Benchmark Curation Statistics (MF Split, Re-split 80/10/10)
+## Benchmark Curation Statistics (v0.1.0 Release; MF Split, Re-split 80/10/10))
 
 ### Filtering Funnel
 
@@ -115,19 +146,28 @@ force-fingerprint/
 ## Key Design Decisions
 
 ### 1. Why Filter First, Then Re-split?
-The raw DPFunc manifest came with pre-assigned splits (33,046 train / 419 valid / 699 test). Because biological monomer and non-membrane filters eliminate ~98% of candidate proteins, preserving the original split leaves only **4 validation** and **14 test** proteins—making model evaluation statistically meaningless.
+The raw DPFunc manifest came with pre-assigned splits (33,046 train / 419 valid / 699 test). Because the biological filters eliminate the large majority of candidate proteins (~98% in the v0.1.0 run), preserving the original split leaves only a handful of validation and test proteins (4 and 14 in v0.1.0), making model evaluation statistically meaningless.
 
-The pipeline filters all 34,164 proteins across the whole dataset first, then re-partitions the surviving clean monomers with `--resplit 0.8 0.1 0.1` into a balanced **497 train / 69 validation / 69 test** split. The GO vocabulary and class weights are derived strictly from the new train split to prevent data leakage.
+The pipeline filters 34,164 all proteins across the whole dataset first, then re-partitions the survivors with `--resplit 0.8 0.1 0.1` into a balanced trail / validation / test split. The GO vocabulary and class weights are derived strictly from the new train split.
 
-### 2. PDB vs. AlphaFold Structure Strategy
+### 2. Monomer Evidence: Strict vs. Supported
+Most UniProt entries never state an oligomeric state; many have no subunit comment or only list binding partners. `strict` mode therefore requires explicit proof of monomericity and removes the vast majority of proteins, including many monomers. `supported` mode first drops proteins with positive evidence of a stable complex, then retains only those with monomer support, recording how strong that support is in `monomer_tier` so the strongest evidence can be preferred when selecting the final set.
+
+### 3. Disorder Before Redundancy
+The disorder filter runs before redundancy filtering so that each cluster's representative is chosen only among proteins that pass it; otherwise a cluster could lose its only usable member.
+
+### 4. Redundancy Verification
+MMseqs2 clustering only guarantees that each member resembles its own cluster's MMseqs2 representative. Because the pipeline chooses its own representatives (by species and annotation quality), two kept proteins from different clusters could still be similar. An all-against-all MMseqs2 search of the kept set, followed by a greedy pass in representative-priority order, removes any remaining pairs above the threshold.
+
+### 5. PDB vs. AlphaFold Structure Strategy
 AlphaFold DB generated predictions for virtually the entire UniProt proteome, including proteins that already have experimental crystal structures. In our audit:
 - **PDB + AlphaFold**: Both an experimental RCSB PDB structure and an AlphaFold DB prediction exist.
 - **AlphaFold Only**: No experimental structure exists in the PDB; AlphaFold is the only 3D model available.
 
 The pipeline operates in **PDB-first mode** (`--structure-source-pref pdb`, the default):
-- For all **336 proteins** with experimental structures, experimental coordinates are downloaded directly from the RCSB PDB (preferring native `.pdb`, falling back to mmCIF `.cif` if only CIF was deposited).
-- For the **299 proteins** lacking experimental structures, pre-computed predictions are fetched from AlphaFold DB (`.pdb`).
-- Users can optionally pass `--structure-source-pref alphafold` if they prefer AlphaFold predictions across all 635 proteins for uniform backbone modeling.
+- For proteins with experimental structures, experimental coordinates are downloaded directly from the RCSB PDB (preferring native `.pdb`, falling back to mmCIF `.cif` if only CIF was deposited).
+- For proteins lacking experimental structures, pre-computed predictions are fetched from AlphaFold DB (`.pdb`).
+- Users can optionally pass `--structure-source-pref alphafold` if they prefer AlphaFold predictions for all proteins, for uniform backbone modeling.
 
 ---
 
