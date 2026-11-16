@@ -3,10 +3,15 @@
   python benchmark/run.py --table benchmark_tables/full.csv --out runs/full
 
 Four steps, each one skipped when its output already exists (delete the file to redo it):
-  1. train   sequence only            (--structure off)
-  2. train   sequence + structure     (frozen structure teacher, sequence student; the default configuration)
-  3. predict on the test proteins     sequence only | teacher/student, sequence only at inference | teacher/student, structure used at inference
-  4. score   every prediction file, plus any --pred NAME=FILE you add (e.g. the DPFunc export), with benchmark/score.py
+  1. train   one model per VARIANT, from no structure influence to strong structure influence (see --variants):
+               seq        sequence only, no structure anywhere             (--structure off)
+               align0     structure branch trained, no contrastive term    (loss.lambda_align=0)
+               align0.3   weak contrastive alignment to the structure teacher
+               align1     the default alignment weight
+               align3     strong alignment
+  2. predict on the test proteins     every variant with sequence only at inference; the structure variants also with structure at inference
+  3. score   every prediction file, plus any --pred NAME=FILE you add (e.g. the DPFunc export), with benchmark/score.py
+  The variant with the best validation Fmax is what to report; the others show how much the structure influence matters.
 
 --dry-run prints the commands without running them.  Extra config overrides go after --set, e.g.
   --set train.batch_size=64 train.epochs=60
@@ -33,7 +38,10 @@ def main():
     ap.add_argument('--table', required=True, help='benchmark table from build_benchmark_tables.py (data branch)')
     ap.add_argument('--out', required=True, help='folder for the runs, predictions and scores')
     ap.add_argument('--min-count', type=int, default=10, help='GO terms seen fewer times in the training proteins are not predicted')
+    ap.add_argument('--plm', default=None, help='frozen sequence model, e.g. facebook/esm2_t30_150M_UR50D, facebook/esm2_t33_650M_UR50D '
+                    '(default: the one in config.yaml, ESM-2 35M); the embedding size is detected automatically')
     ap.add_argument('--pred', action='append', default=[], metavar='NAME=FILE', help='predictions of another method, passed on to score.py')
+    ap.add_argument('--variants', default='seq,align0,align0.3,align1,align3', help='comma list of the variants above to train')
     ap.add_argument('--set', nargs='*', default=[], help='config overrides, key=value')
     ap.add_argument('--dry-run', action='store_true')
     args = ap.parse_args()
@@ -42,6 +50,8 @@ def main():
     os.makedirs(out, exist_ok=True)
     py = sys.executable
     sets = [f'data.min_label_count={args.min_count}', *args.set]
+    if args.plm:
+        sets.append(f'seq_encoder.plm_model={args.plm}')
     common = ['--targets', f'{TARGET}:multilabel', '--mode', 'per_target']
 
     # the predict command scores every row of the csv it is given, so hand it only the test proteins
@@ -54,26 +64,35 @@ def main():
         if n.get('valid', 0) < 30:
             print('NOTE: very few validation proteins; model selection and early stopping on them are noisy.')
 
-    models = {'seq': ['--structure', 'off'], 'staged': ['--structure', 'on']}
-    for name, flags in models.items():
+    allv = {'seq': (['--structure', 'off'], []),
+            'align0': (['--structure', 'on'], ['loss.lambda_align=0']),
+            'align0.3': (['--structure', 'on'], ['loss.lambda_align=0.3']),
+            'align1': (['--structure', 'on'], ['loss.lambda_align=1.0']),
+            'align3': (['--structure', 'on'], ['loss.lambda_align=3.0'])}
+    names = [v for v in args.variants.split(',') if v]
+    bad = [v for v in names if v not in allv]
+    if bad:
+        sys.exit(f'unknown variant {bad}; choose from {list(allv)}')
+    for name in names:
+        flags, extra = allv[name]
         d = os.path.join(out, name)
         if os.path.isdir(d) and os.listdir(d):
             print(f'skip training {name}: {d} exists')
             continue
-        run([py, 'mp.py', 'train', '--csv', table, *common, *flags, '--out', d, '--set', *sets], args.dry_run)
+        run([py, 'mp.py', 'train', '--csv', table, *common, *flags, '--out', d, '--set', *sets, *extra], args.dry_run)
 
     preds = {}
-    for label, model, structure in (('sequence only', 'seq', 'off'),
-                                    ('sequence + structure (teacher; sequence only at inference)', 'staged', 'off'),
-                                    ('sequence + structure (structure used at inference)', 'staged', 'on')):
-        stem = os.path.join(out, f'pred_{model}_{structure}')
-        probs = f'{stem}_{TARGET}_probs.npz'
-        preds[label] = probs
-        if os.path.exists(probs):
-            print(f'skip prediction {label}: {probs} exists')
-            continue
-        run([py, 'mp.py', 'predict', '--csv', test_csv, '--run', os.path.join(out, model), '--structure', structure,
-             '--out', stem + '.csv', '--set', *sets], args.dry_run)
+    for name in names:
+        for structure in (['off'] if name == 'seq' else ['off', 'on']):
+            label = 'sequence only' if name == 'seq' else f"{name} ({'structure used at inference' if structure == 'on' else 'sequence only at inference'})"
+            stem = os.path.join(out, f'pred_{name}_{structure}')
+            probs = f'{stem}_{TARGET}_probs.npz'
+            preds[label] = probs
+            if os.path.exists(probs):
+                print(f'skip prediction {label}: {probs} exists')
+                continue
+            run([py, 'mp.py', 'predict', '--csv', test_csv, '--run', os.path.join(out, name), '--structure', structure,
+                 '--out', stem + '.csv', '--set', *sets], args.dry_run)
 
     cmd = [py, 'benchmark/score.py', '--table', table, '--min-count', str(args.min_count), '--out', os.path.join(out, 'scores')]
     for label, path in {**preds, **dict(p.split('=', 1) for p in args.pred)}.items():

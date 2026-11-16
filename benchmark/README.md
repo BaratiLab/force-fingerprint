@@ -101,3 +101,17 @@ Evaluated on the 635 curated monomer benchmark (`benchmark_tables/reduced_respli
 
 Only MF is set up. Proteins longer than 1000 residues are left out of every setting (about 10% of the full benchmark), so the `full` test set
 is smaller than DPFunc's own.
+
+## 5. Larger sequence models
+
+The frozen sequence model is a setting, not part of the architecture. `--plm` swaps it, and the embedding size is read from the model:
+
+```bash
+python benchmark/run.py --table benchmark_tables/reduced_resplit.csv --out runs/reduced_resplit_esm650M --plm facebook/esm2_t33_650M_UR50D
+```
+
+Use a separate `--out` per model. Candidates, all loaded through Hugging Face: `facebook/esm2_t30_150M_UR50D`, `facebook/esm2_t33_650M_UR50D`
+(needs about 3 GB of GPU memory to embed), `facebook/esm2_t36_3B_UR50D` (fp16 on CUDA, about 8 GB). Embeddings are cached per model in `cache/`.
+Whether a larger model helps is an empirical question: on 635 proteins a bigger input can overfit, so compare on the validation proteins before looking at test scores.
+The contrastive term is tuned the same way, for example `--set loss.lambda_align=0.5` or `loss.lambda_align=2` and `model.proj_dim=256`, one run per value.
+For an apples-to-apples comparison with DPFunc keep DPFunc's own split (the `full` and `reduced_original` tables); `reduced_resplit` is the new split.

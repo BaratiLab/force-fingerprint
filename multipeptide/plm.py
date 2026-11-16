@@ -17,7 +17,7 @@ def embed_sequences(seqs, model_name, cache_path, log=print):
         from transformers import AutoModel, AutoTokenizer
         dev = 'mps' if torch.backends.mps.is_available() else 'cuda' if torch.cuda.is_available() else 'cpu'
         tok = AutoTokenizer.from_pretrained(model_name, do_lower_case=False)
-        net = AutoModel.from_pretrained(model_name).to(dev).eval()
+        net = AutoModel.from_pretrained(model_name, torch_dtype=torch.float16 if dev == 'cuda' else torch.float32).to(dev).eval()
         bert_style = 'bert' in model_name.lower()
         log(f'[plm] embedding {len(todo)} sequences with {model_name} on {dev}')
         with torch.no_grad():

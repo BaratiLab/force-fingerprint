@@ -52,7 +52,12 @@ def get_plm(cfg, recs, log=print):
     s = cfg['seq_encoder']
     path = os.path.join(cfg['data']['cache_dir'], 'plm_' + s['plm_model'].split('/')[-1] + '.pt')
     os.makedirs(cfg['data']['cache_dir'], exist_ok=True)
-    return embed_sequences([r['seq'] for r in recs], s['plm_model'], path, log)
+    emb = embed_sequences([r['seq'] for r in recs], s['plm_model'], path, log)
+    dim = int(next(iter(emb.values())).shape[-1])
+    if s['plm_dim'] != dim:
+        log(f"[plm] {s['plm_model']} has {dim}-d embeddings; using plm_dim={dim} instead of {s['plm_dim']}")
+        s['plm_dim'] = dim
+    return emb
 
 
 # ----------------------------------------------------------------------------- predict / evaluate
