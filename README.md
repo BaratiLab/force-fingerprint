@@ -174,3 +174,13 @@ The pipeline operates in **PDB-first mode** (`--structure-source-pref pdb`, the 
 ## License
 
 [MIT](LICENSE)
+
+## Structure quality report
+
+`structure_qc.py` checks the structures of a filtered manifest (PDB and AlphaFold): coverage of the UniProt sequence, sequence match, chain breaks,
+C-alpha clashes, mean pLDDT for AlphaFold models, resolution for PDB entries (`--rcsb`) and AlphaFold-versus-PDB RMSD (`--af-root`). Proteins without a
+structure are reported as `no_structure` and kept by `--drop`, since the sequence model does not need one.
+
+```bash
+python structure_qc.py --manifest filtered_mf/filtered_manifest.tsv --root . --sequences filtered_mf/annotations.tsv --rcsb --out structure_qc.tsv
+```
